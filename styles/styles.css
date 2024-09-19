@@ -42,6 +42,12 @@
         padding-right: 0.4rem;
     }
 
+    .user{
+        width: 10%;
+        height: 30%;
+        background-color: #570808;
+    }
+
     text-decoration: none;
 }
 
@@ -77,6 +83,7 @@
 .col{
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 /*REGLAS INDIVIDUALES*/
