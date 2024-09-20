@@ -2,47 +2,57 @@
 /*acá se dan lineamientos generales*/
 
 /*constantes*/
-:root{
+:root {
     /*colores*/
-    --1ro-100:#DBC7DA;
-    --1ro-200:#DAB1D9;
-    --1ro-300:#DC88DB;
-    --1ro-400:#9F449F;
-    --1ro-500:#902490;
-    --1ro-600:#730A72;
-    --1ro-700:#410740;
-    --2do-100:#FEFFE5;
-    --2do-200:#FBFF99;
-    --2do-300:#F8FF4D;
-    --2do-400:#EBFF01;
-    --2do-500:#A4B200;
-    --2do-600:#5E6600;
-    --2do-700:#2F3300;
-    --3ro-100:#FF8282;
-    --3ro-200:#FF5151;
-    --3ro-300:#FF3434;
-    --3ro-400:#FF0808;
-    --3ro-500:#B10A0A;
-    --3ro-600:#8A0A0A;
-    --3ro-700:#570808;
-    --em-1:#EFB810;
-    --em-2:#C2960F;
-    --ntr-100:#F2F2F2;
-    --ntr-200:#CCCCCC;
-    /*fuentes*/
+    --1ro-100: #DBC7DA;
+    --1ro-200: #DAB1D9;
+    --1ro-300: #DC88DB;
+    --1ro-400: #9F449F;
+    --1ro-500: #902490;
+    --1ro-600: #730A72;
+    --1ro-700: #410740;
+    --2do-100: #FEFFE5;
+    --2do-200: #FBFF99;
+    --2do-300: #F8FF4D;
+    --2do-400: #EBFF01;
+    --2do-500: #A4B200;
+    --2do-600: #5E6600;
+    --2do-700: #2F3300;
+    --3ro-100: #FF8282;
+    --3ro-200: #FF5151;
+    --3ro-300: #FF3434;
+    --3ro-400: #FF0808;
+    --3ro-500: #B10A0A;
+    --3ro-600: #8A0A0A;
+    --3ro-700: #570808;
+    --em-1: #EFB810;
+    --em-2: #C2960F;
+    --ntr-100: #F2F2F2;
+    --ntr-200: #CCCCCC;
+    /*fuentes y espaciado UNIVERSAL*/
+    /*si algo de espaciado no anda, revisen acá*/
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 1rem;
     margin: auto;
-    ul{
+
+    ul,
+    main,
+    section,
+    div {
+        border: #3d3d3d solid 1px;
+    }
+
+    ul {
         list-style: none;
     }
-    li{
+
+    li {
         padding: 0.2rem;
         padding-left: 0.4rem;
         padding-right: 0.4rem;
     }
 
-    .user{
+    .usuario {
         width: 10%;
         height: 30%;
         background-color: #570808;
@@ -51,36 +61,36 @@
     text-decoration: none;
 }
 
-#card{
+#card {
     width: 240px;
     height: 80px;
     background-color: #5E6600;
 }
 
-/*alineación y balanceo*/
-.row{
+/*distribución del espacio*/
+.fl {
     display: flex;
     flex-direction: row;
 }
 
-.fl-jus-ctr{
+.fl-just-centro {
     display: flex;
     justify-content: center;
 }
 
-.fl-jus-even{
+.fl-just-parejo {
     justify-content: space-evenly;
 }
 
-.fl-jus-side{
+.fl-just-lados {
     justify-content: space-between;
 }
 
-.v-ctr{
+.cntr-v {
     align-items: center;
 }
 
-.col{
+.col {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -90,13 +100,13 @@
 /*acá se regulan las moléculas/organismos básicos de la plantilla*/
 
 /*elementos de prueba*/
-#img{
+#img {
     width: 80px;
     height: 80px;
     background-color: #410740;
 }
 
-#card{
+#card {
     width: 240px;
     height: 80px;
     background-color: #5E6600;

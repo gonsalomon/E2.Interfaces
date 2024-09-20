@@ -10,11 +10,11 @@
 
 <body>
     <header class="col">
-        <div class="row fl-jus-side">
-            <!--menú hamburguesa-->
-            <!--imagen del sitio + cuadro de búsqueda-->
+        <div class="fl fl-just-lados">
+
             <!--galería de juegos-->
-            
+
+            <!--menú hamburguesa WIP-->
             <div>
                 <ul class="col">
                     <li><a class="item" href="#">Acción</a></li>
@@ -24,21 +24,24 @@
                     <li><a class="item" href="#">Terror</a></li>
                 </ul>
             </div>
-            <section class="row">
+            <!--imagen del sitio + cuadro de búsqueda-->
+            <div class="fl col">
                 <div id="img">
-                    <!--<img/>-->
+                    <!--reemplazar el contenido por la imagen del sitio-->
+                    imgsitio
                 </div>
                 <div>
-                    <input/>
+                    <!--este div es para buscar-->
+                    <input placeholder="Buscar" />
                 </div>
-            </section>
+            </div>
             <!--carrito + card usuario-->
             <!--     <section class="row">
                 <div id="img"></div>
                 <div id="card"></div>
-            </section> -->
+            </section>
         </div>
-        <!--         <nav class="row fl-jus-ctr">
+                 <nav class="row fl-jus-ctr">
             <ul class="row">
                 <li><a href="#">Juegos nuevos</a></li>
                 <li><a href="#">Logros</a></li>
@@ -47,21 +50,30 @@
                 <li><a href="#">Más jugados</a></li>
             </ul>
         </nav> -->
-        <div class="user">usuario</div>
+            <div class="usuario">usuario</div>
     </header>
-    
+    <main>
+        <!--acá van los juegos, capaz que con ul, hay que ver de usar html semántico para mejorar el SEO-->
+        juegos
+    </main>
     <!--fat footer-->
-    <footer class="col fl-jus-ctr">
+    <footer class="fl fl-jus-ctr">
         <section class="fl-jus-ctr">
             <figure>
                 <div id="img">a</div>
-                <!--<img src="" alt="">-->
+                <!-- acá va el logo, otra vez <img src="" alt="">-->
+                img sitio
             </figure>
         </section>
         <section class="row fl-jus-even">
-            <nav></nav>
-            <nav></nav>
-            <nav></nav>
+            <nav>
+                un nav (el nav es el menú, semánticamente; las UL con A adentro de cada LI son los menúes per sé)
+                <ul>
+                    <li>opcion 1</li>
+                    <li>opcion 2</li>
+                    <li>opcion 3</li>
+                </ul>
+            </nav>
         </section>
     </footer>
 </body>
