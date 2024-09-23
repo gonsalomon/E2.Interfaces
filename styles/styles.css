@@ -70,7 +70,7 @@
 /*distribución del espacio*/
 .fl {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .fl-just-centro {
@@ -96,6 +96,19 @@
     justify-content: space-around;
 }
 
+.navs_footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.img_sentro{
+    display: flex;
+    justify-content: center;
+}
+.header_betwenn{
+    flex-direction: row;
+    justify-content: space-between;
+}
 /*REGLAS INDIVIDUALES*/
 /*acá se regulan las moléculas/organismos básicos de la plantilla*/
 
