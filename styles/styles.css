@@ -114,7 +114,7 @@
 
 /*elementos de prueba*/
 #img {
-    width: 80px;
+    width: 100px;
     height: 80px;
     background-color: #410740;
 }
@@ -125,8 +125,65 @@
     background-color: #5E6600;
 }
 
-/*menú hamburguesa*/
+/*secciones generales*/
+.container{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+header{
+    background-color: var(--1ro-400);
+}
 
+footer{
+    background-color: var(--1ro-400);
+    margin-top: auto;
+}
+
+
+
+/*imagenes*/
+img{
+    width: 70px;
+    height: 70px;
+}
+
+/*duscador*/
+.browser{
+    align-items: center ;
+}
+
+/*menú hamburguesa*/
+.menu_hamburguer{
+    width: 30px;
+    height: 30px;
+    background-color: var(--1ro-500);
+    justify-content: space-evenly;
+    border-radius: 10px;
+    align-items: center;
+    /*transition:<propiedad><duracion><><>*/
+    transition: background-color 1s,width 1s, height 1s ;
+}
+.menu_hamburguer:hover{
+    width: 50px;
+    height: 70px;
+    background-color: var(--3ro-500);
+    justify-content: space-evenly;
+    border-radius: 10px;
+    align-items: center;
+
+}
+.elems_menu_hamburguer{
+    height: 12%;
+    width: 60%;
+    background-color: var(--1ro-100);
+    border-radius: 10px;
+}
+
+
+.menu_hamburguerWIP{
+    display: none;
+}
 
 /* Parte Formulario */
 form{
@@ -141,3 +198,18 @@ form{
     height: 40%;
     background-color: rgb(236, 0, 236);
 }
+
+
+/* animaciones y transformaciones */
+/*
+@keyframes desplega_menu{
+    0%{
+        background-color: var(--1ro-500);
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: var(--1ro-500)
+    }
+}*/
