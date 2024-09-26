@@ -225,14 +225,33 @@ form{
     display: flex;
     flex-wrap: wrap;
 }
+
+/*botones carrucel*/
 .contenedor_btn_carrucel{
     display: flex;
     justify-content: end;
 }
 .btn_carrucel{
-    height: 20px;
-    width: 20px;
+    height: 25px;
+    width: 25px;
     padding: 5px;
+    border-radius: 100%;
+    background-color: var(--1ro-600);
+}
+/*flechas*/
+.btn_carrucel_flecha{
+    height: 15%;
+    width: 90%;
+    border-radius: 10px;
+    background-color: var(--1ro-100);
+}
+.flecha_izq_arriba{
+    /*rotate(-45deg)*/
+    transform: rotate(150deg) translate(5px,-1px);
+}
+.flecha_izq_abajo{
+    /*rotate(45deg)*/
+    transform: rotate(30deg) translate(0px,9px);
 }
 
 
