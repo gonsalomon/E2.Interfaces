@@ -206,7 +206,7 @@ p{
 }
 
 /* Parte Formulario */
-form{
+form {
     display: flex;
     flex-direction: column;
     padding: 10%;
