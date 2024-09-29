@@ -1,18 +1,17 @@
 let boton = document.querySelector("#boton");
 let menu = document.querySelector("#menu");
-
-// Inicialmente, el menú está oculto
-menu.classList.add("oculto");
+let closeBtn = document.querySelector("#close-btn");
 
 boton.addEventListener("click", abrirMenu);
-document.querySelector("#close-btn").addEventListener("click", cerrarMenu);
+closeBtn.addEventListener("click", cerrarMenu);
 
 function abrirMenu(event) {
     event.preventDefault();
-    menu.classList.remove("oculto"); 
+    menu.classList.remove("oculto");  
+    boton.style.display = "none";     
 }
 
 function cerrarMenu() {
-    menu.classList.add("oculto");
-    boton.classList.remove("oculto"); 
+    menu.classList.add("oculto");     
+    boton.style.display = "flex";     // Muestra nuevamente el botón de hamburguesa aplicando flex
 }
