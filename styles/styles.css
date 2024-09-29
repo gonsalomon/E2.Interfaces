@@ -253,7 +253,9 @@ form {
     height: 40%;
     background-color: rgb(236, 0, 236);
 }
-
+.oculto {
+    display: none;
+}
 
 /*carrucel*/
 .carrucel{
