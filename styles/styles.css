@@ -61,11 +61,7 @@
     text-decoration: none;
 }
 
-.card {
-    width: 240px;
-    height: 80px;
-    background-color: #5E6600;
-}
+
 
 /*distribución del espacio*/
 .fl {
@@ -156,7 +152,46 @@ p{
     margin: 0px;
 }
 
+/*cards*/
+.card{
+    margin:30px;
+    background-color: var(--1ro-300);
+    border-radius: 0px 0px 10px 10px ;
+}
+.img_card{
+    width:150px ;
+    height:221px ;
+}
+.btn_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: var(--1ro-500);
+    color: white;
+}
+.animation_btn_play{
+    border: var(--1ro-500) solid 1px;
+    transition: 1s ;
+}
+/*animacion btn_card*/
+.btn_card:hover{
+    .animation_btn_play{
+        margin: 1px;
+        height: 0px;
+        width: 0px;
+        border-left: 15px solid var(--1ro-100);
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+    }
+}
 
+.text_card{
+    margin:0px;
+    color: white;
+}
 
 /*duscador*/
 .browser{
@@ -224,35 +259,43 @@ form {
 .carrucel{
     display: flex;
     flex-wrap: wrap;
+    background-color: var(--1ro-600);
 }
 
 /*botones carrucel*/
 .contenedor_btn_carrucel{
     display: flex;
     justify-content: end;
-}
-.btn_carrucel{
-    height: 25px;
-    width: 25px;
-    padding: 5px;
-    border-radius: 100%;
     background-color: var(--1ro-600);
 }
+.btn_carrucel{
+    display: flex;
+    height: auto;
+    width: 2%;
+    padding: 5px;
+    margin: 1px  3px 1px 3px;
+    border-radius: 25%;
+    background-color: var(--1ro-400);
+}
+.btn_carrucel_der{
+    justify-content: end;
+}
 /*flechas*/
-.btn_carrucel_flecha{
-    height: 15%;
-    width: 90%;
-    border-radius: 10px;
-    background-color: var(--1ro-100);
+.flecha_carrucel_izq{
+    height: 0px;
+    width: 0px;
+    border-right:10px solid var(--1ro-100);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
 }
-.flecha_izq_arriba{
-    /*rotate(-45deg)*/
-    transform: rotate(150deg) translate(5px,-1px);
+.flecha_carrucel_der{
+    height: 0px;
+    width: 0px;
+    border-left: 10px solid var(--1ro-100);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
 }
-.flecha_izq_abajo{
-    /*rotate(45deg)*/
-    transform: rotate(30deg) translate(0px,9px);
-}
+
 
 
 /* animaciones y transformaciones */
@@ -268,3 +311,4 @@ form {
         background-color: var(--1ro-500)
     }
 }*/
+
