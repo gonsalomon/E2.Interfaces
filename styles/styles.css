@@ -152,6 +152,9 @@ p{
     margin: 0px;
 }
 
+
+
+
 /*cards*/
 .card{
     margin:30px;
@@ -174,7 +177,18 @@ p{
 }
 .animation_btn_play{
     border: var(--1ro-500) solid 1px;
-    transition: 1s ;
+    transition: 250ms ;
+}
+
+.btn_card_compra{
+    color:var(--2do-300);
+}
+.btn_compra_img{
+    height: 0px;
+    width: 0px;
+    transition: 
+        height 250ms,
+        width 250ms;
 }
 /*animacion btn_card*/
 .btn_card:hover{
@@ -186,7 +200,13 @@ p{
         border-top: 7px solid transparent;
         border-bottom: 7px solid transparent;
     }
+    .btn_compra_img{
+        height: 15px;
+        width: 15px;
+    }
 }
+
+
 
 .text_card{
     margin:0px;
@@ -287,8 +307,12 @@ form {
 /*carrucel*/
 .carrucel{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     background-color: var(--1ro-600);
+}
+
+.grande{
+    display: flex;
 }
 
 /*botones carrucel*/
@@ -300,7 +324,7 @@ form {
 .btn_carrucel{
     display: flex;
     height: auto;
-    width: 2%;
+    width: 15px;
     padding: 5px;
     margin: 1px  3px 1px 3px;
     border-radius: 25%;
@@ -309,6 +333,16 @@ form {
 .btn_carrucel_der{
     justify-content: end;
 }
+
+.btn_carrucel:hover{
+
+    .flecha_carrucel_izq{
+        translate: -4px;
+    }
+    .flecha_carrucel_der{
+        translate: 4px;
+    }
+}
 /*flechas*/
 .flecha_carrucel_izq{
     height: 0px;
@@ -316,6 +350,7 @@ form {
     border-right:10px solid var(--1ro-100);
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
+    transition: translate 150ms;
 }
 .flecha_carrucel_der{
     height: 0px;
@@ -323,6 +358,8 @@ form {
     border-left: 10px solid var(--1ro-100);
     border-top: 5px solid transparent;
     border-bottom: 5px solid transparent;
+    transition: 
+        translate 150ms,
 }
 
 
@@ -340,4 +377,5 @@ form {
         background-color: var(--1ro-500)
     }
 }*/
+
 
