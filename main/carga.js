@@ -2,13 +2,20 @@
 
 /* setInterval(() => {
     let numDom = document.querySelector("#carga")
-    numDom.innerHTML = 20;
-    numDom.innerHTML = 50;
-    numDom.innerHTML = 70;
-    numDom.innerHTML = 73;
-    numDom.innerHTML = 73.2;
-    numDom.innerHTML = 73.5;
-    numDom.innerHTML = 73.7;
-    numDom.innerHTML = "facu puto";
-    numDom.innerHTML = 100;
-}, 3000); */
+    let i = 0;
+    let flag = false;
+    while (!flag) {
+        
+        
+    
+        numDom.innerHTML += `${i++}0`;
+        if (i <= 10) {
+            flag =true;
+        }
+        console.log(i);
+        console.log(numDom);
+        
+        
+    }
+    
+}, 1000); */
