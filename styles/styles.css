@@ -34,206 +34,221 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 1rem;
     margin: auto;
+    
+}
+    @media only screen and (min-width: 660px) {
+    
+            ul,
+            main,
+            section,
+            div {
+                border: #3d3d3d solid 1px;
+            }
+    
+            ul {
+                list-style: none;
+            }
+    
+            li {
+                padding: 0.2rem;
+                padding-left: 0.4rem;
+                padding-right: 0.4rem;
+            }
+    
+            body {
+                background-color: var(--1ro-200);
+            }
+    
+            .usuario {
+                width: 10%;
+                height: 30%;
+                background-color: #570808;
+            }
+    
 
-    ul,
-    main,
-    section,
-    div {
-        border: #3d3d3d solid 1px;
-    }
-
-    ul {
-        list-style: none;
-    }
-
-    li {
-        padding: 0.2rem;
-        padding-left: 0.4rem;
-        padding-right: 0.4rem;
-    }
-
-body{
-    background-color: var(--1ro-200);
-}
-
-    .usuario {
-        width: 10%;
-        height: 30%;
-        background-color: #570808;
-    }
-
-    text-decoration: none;
-}
-
-/*distribución del espacio*/
-.fl {
-    display: flex;
-    flex-direction: column;
-}
-
-.fl-just-centro {
-    display: flex;
-    justify-content: center;
-}
-
-.fl-just-parejo {
-    justify-content: space-evenly;
-}
-
-.fl-just-lados {
-    justify-content: space-between;
-}
-
-.cntr-v {
-    align-items: center;
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.navs_footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.img_sentro{
-    display: flex;
-    justify-content: center;
-}
-.header_betwenn{
-    flex-direction: row;
-    justify-content: space-between;
-}
-/*REGLAS INDIVIDUALES*/
-/*acá se regulan las moléculas/organismos básicos de la plantilla*/
-
-/*elementos de prueba*/
-#img {
-    width: 100px;
-    height: 80px;
-    background-color: #410740;
-}
-
-#card {
-    width: 240px;
-    height: 80px;
-    background-color: #5E6600;
-}
-
-/*secciones generales*/
-.container{
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-header{
-    background-color: var(--1ro-400);
-}
-
-footer{
-    background-color: var(--1ro-400);
-    margin-top: auto;
-}
-
-/*imagenes*/
-img{
-    width: 40px;
-    height: 40px;
-}
-.img_footer{
-    width: 60px;
-    height: 60px;
-}
-/*parrafos*/
-p{
-    margin: 0px;
-}
-
-/*cards*/
-.card{
-    margin:10px;
-    background-color: var(--1ro-300);
-    border-radius: 0px 0px 10px 10px ;
-}
-.img_card{
-    width:150px ;
-    height:221px ;
-}
-.btn_card{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
-    border: 0px;
-    border-radius: 6px;
-    background-color: var(--1ro-500);
-    color: white;
-}
-.animation_btn_play{
-    border: var(--1ro-500) solid 1px;
-    transition: 250ms ;
-}
-
-.btn_card_compra{
-    color:var(--2do-300);
-}
-.btn_compra_img{
-    height: 0px;
-    width: 0px;
-    transition: 
-        height 250ms,
-        width 250ms;
-}
-/*animacion btn_card*/
-.btn_card:hover{
-    .animation_btn_play{
-        margin: 1px;
-        height: 0px;
-        width: 0px;
-        border-left: 14px solid var(--1ro-100);
-        border-top: 7px solid transparent;
-        border-bottom: 7px solid transparent;
-    }
-    .btn_compra_img{
-        height: 15px;
-        width: 15px;
-    }
-}
-
-
-
-.text_card{
-    margin:0px;
-    color: white;
-}
-
-/*duscador*/
-.browser{
-    align-items: center ;
-}
-
-/*menú hamburguesa*/
-.menu_hamburguer{
-    width: 40px;
-    height: 40px;
-    background-color: var(--1ro-500);
-    justify-content: space-evenly;
-    border-radius: 10px;
-    align-items: center;
-    /*transition:<propiedad><duracion><><>*/
-    transition: background-color 1s,width 1s, height 1s ;
-}
-.menu_hamburguer:hover{
-    width: 100px;
-    height: 100px;
-    background-color: var(--3ro-500);
-    /*justify-content: space-evenly;*/
-    border-radius: 10px;
-    align-items: center;
+            
+            /*distribución del espacio*/
+        .fl {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .fl-just-centro {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .fl-just-parejo {
+            justify-content: space-evenly;
+        }
+    
+        .fl-just-lados {
+            justify-content: space-between;
+        }
+    
+        .cntr-v {
+            align-items: center;
+        }
+    
+        .col {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    
+        .navs_footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    
+        .img_sentro {
+            display: flex;
+            justify-content: center;
+        }
+    
+        .header_betwenn {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    
+        /*REGLAS INDIVIDUALES*/
+        /*acá se regulan las moléculas/organismos básicos de la plantilla*/
+    
+        /*elementos de prueba*/
+        #img {
+            width: 100px;
+            height: 80px;
+            background-color: #410740;
+        }
+    
+        #card {
+            width: 240px;
+            height: 80px;
+            background-color: #5E6600;
+        }
+    
+        /*secciones generales*/
+        .container {
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+        }
+        
+        header {
+            background-color: var(--1ro-400);
+        }
+    
+        footer {
+            background-color: var(--1ro-400);
+            margin-top: auto;
+        }
+    
+        /*imagenes*/
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    
+        .img_footer {
+            width: 60px;
+            height: 60px;
+        }
+        
+        /*parrafos*/
+        p {
+            margin: 0px;
+        }
+    
+        /*cards*/
+        .card {
+            margin: 10px;
+            background-color: var(--1ro-300);
+            border-radius: 0px 0px 10px 10px;
+        }
+    
+        .img_card {
+            width: 150px;
+            height: 221px;
+        }
+    
+        .btn_card {
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            margin: 10px;
+            border: 0px;
+            border-radius: 6px;
+            background-color: var(--1ro-500);
+            color: white;
+        }
+    
+        .animation_btn_play {
+            border: var(--1ro-500) solid 1px;
+            transition: 250ms;
+        }
+    
+        .btn_card_compra {
+            color: var(--2do-300);
+        }
+    
+        .btn_compra_img {
+            height: 0px;
+            width: 0px;
+            transition:
+                height 250ms,
+                width 250ms;
+        }
+    
+        /*animacion btn_card*/
+        .btn_card:hover {
+            .animation_btn_play {
+                margin: 1px;
+                height: 0px;
+                width: 0px;
+                border-left: 14px solid var(--1ro-100);
+                border-top: 7px solid transparent;
+                border-bottom: 7px solid transparent;
+            }
+    
+            .btn_compra_img {
+                height: 15px;
+                width: 15px;
+            }
+        }
+    
+    
+    
+        .text_card {
+            margin: 0px;
+            color: white;
+        }
+    
+        /*duscador*/
+        .browser {
+            align-items: center;
+        }
+    
+        /*menú hamburguesa*/
+        .menu_hamburguer {
+            width: 40px;
+            height: 40px;
+            background-color: var(--1ro-500);
+            justify-content: space-evenly;
+            border-radius: 10px;
+            align-items: center;
+            /*transition:<propiedad><duracion><><>*/
+            transition: background-color 1s, width 1s, height 1s;
+        }
+    
+        .menu_hamburguer:hover {
+            width: 100px;
+            height: 100px;
+            background-color: var(--3ro-500);
+            /*justify-content: space-evenly;*/
+            border-radius: 10px;
+            align-items: center;
     
 
     .elems_menu_hamburguer{
@@ -285,6 +300,7 @@ div ul li{
     width: 14%;
     background-color: var(--1ro-400);
     position: fixed;
+ 
 }
 
 form {
@@ -324,85 +340,91 @@ form {
     border-radius: 2px;
 }
 
-/* ----------------------------------------------------- */
-/* ----------------------------------------------------- */
-
-
-/*carrucel*/
-.contenedor_carrucel_y_botones{
-    margin: 10px 0px 10px 0px;
+        /* ----------------------------------------------------- */
+        /* ----------------------------------------------------- */
+    
+    
+        /*carrucel*/
+        .contenedor_carrucel_y_botones {
+            margin: 10px 0px 10px 0px;
+        }
+    
+        .carrucel {
+            display: flex;
+            flex-direction: row;
+            background-color: var(--1ro-600);
+        }
+    
+        .grande {
+            display: flex;
+        }
+    
+        /*botones carrucel*/
+        .contenedor_btn_carrucel {
+            display: flex;
+            justify-content: end;
+            background-color: var(--1ro-600);
+        }
+    
+        .btn_carrucel {
+            display: flex;
+            height: auto;
+            width: 15px;
+            padding: 5px;
+            margin: 1px 3px 1px 3px;
+            border-radius: 25%;
+            background-color: var(--1ro-400);
+        }
+    
+        .btn_carrucel_der {
+            justify-content: end;
+        }
+    
+        .btn_carrucel:hover {
+    
+            .flecha_carrucel_izq {
+                translate: -4px;
+            }
+    
+            .flecha_carrucel_der {
+                translate: 4px;
+            }
+        }
+    
+        /*flechas*/
+        .flecha_carrucel_izq {
+            height: 0px;
+            width: 0px;
+            border-right: 10px solid var(--1ro-100);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            transition: translate 150ms;
+        }
+    
+        .flecha_carrucel_der {
+            height: 0px;
+            width: 0px;
+            border-left: 10px solid var(--1ro-100);
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            transition:
+                translate 150ms,
+        }
+    
+    
+    
+        /* animaciones y transformaciones */
+        /*
+    @keyframes desplega_menu{
+        0%{
+            background-color: var(--1ro-500);
+        }
+        50%{
+            background-color: green;
+        }
+        100%{
+            background-color: var(--1ro-500)
+        }
+    }*/
+    
 }
-.carrucel{
-    display: flex;
-    flex-direction: row;
-    background-color: var(--1ro-600);
-}
-
-.grande{
-    display: flex;
-}
-
-/*botones carrucel*/
-.contenedor_btn_carrucel{
-    display: flex;
-    justify-content: end;
-    background-color: var(--1ro-600);
-}
-.btn_carrucel{
-    display: flex;
-    height: auto;
-    width: 15px;
-    padding: 5px;
-    margin: 1px  3px 1px 3px;
-    border-radius: 25%;
-    background-color: var(--1ro-400);
-}
-.btn_carrucel_der{
-    justify-content: end;
-}
-
-.btn_carrucel:hover{
-
-    .flecha_carrucel_izq{
-        translate: -4px;
-    }
-    .flecha_carrucel_der{
-        translate: 4px;
-    }
-}
-/*flechas*/
-.flecha_carrucel_izq{
-    height: 0px;
-    width: 0px;
-    border-right:10px solid var(--1ro-100);
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    transition: translate 150ms;
-}
-.flecha_carrucel_der{
-    height: 0px;
-    width: 0px;
-    border-left: 10px solid var(--1ro-100);
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    transition: 
-        translate 150ms,
-}
-
-
-
-/* animaciones y transformaciones */
-/*
-@keyframes desplega_menu{
-    0%{
-        background-color: var(--1ro-500);
-    }
-    50%{
-        background-color: green;
-    }
-    100%{
-        background-color: var(--1ro-500)
-    }
-}*/
-
-
