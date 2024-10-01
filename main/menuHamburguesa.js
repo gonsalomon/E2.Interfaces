@@ -8,7 +8,8 @@ closeBtn.addEventListener("click", cerrarMenu);
 function abrirMenu(event) {
     event.preventDefault();
     menu.classList.remove("oculto");  
-    boton.style.display = "none";     
+    boton.style.display = "none"; 
+   
 }
 
 function cerrarMenu() {
