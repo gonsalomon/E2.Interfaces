@@ -287,6 +287,11 @@ header{
     justify-content: space-between;
 }
 
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
 .input-y-boton{
     display: flex;
     align-items: center;
