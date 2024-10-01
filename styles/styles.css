@@ -52,6 +52,10 @@
         padding-right: 0.4rem;
     }
 
+body{
+    background-color: var(--1ro-200);
+}
+
     .usuario {
         width: 10%;
         height: 30%;
@@ -157,7 +161,7 @@ p{
 
 /*cards*/
 .card{
-    margin:30px;
+    margin:10px;
     background-color: var(--1ro-300);
     border-radius: 0px 0px 10px 10px ;
 }
@@ -167,6 +171,7 @@ p{
 }
 .btn_card{
     display: flex;
+    align-items: center;
     flex-direction: row;
     justify-content: center;
     margin: 10px;
@@ -196,7 +201,7 @@ p{
         margin: 1px;
         height: 0px;
         width: 0px;
-        border-left: 15px solid var(--1ro-100);
+        border-left: 14px solid var(--1ro-100);
         border-top: 7px solid transparent;
         border-bottom: 7px solid transparent;
     }
@@ -305,6 +310,9 @@ form {
 
 
 /*carrucel*/
+.contenedor_carrucel_y_botones{
+    margin: 10px 0px 10px 0px;
+}
 .carrucel{
     display: flex;
     flex-direction: row;
