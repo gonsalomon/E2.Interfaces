@@ -284,6 +284,7 @@ div ul li{
 .menu{
     width: 14%;
     background-color: var(--1ro-400);
+    position: fixed;
 }
 
 form {
