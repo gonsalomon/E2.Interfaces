@@ -65,8 +65,6 @@ body{
     text-decoration: none;
 }
 
-
-
 /*distribución del espacio*/
 .fl {
     display: flex;
@@ -140,8 +138,6 @@ footer{
     margin-top: auto;
 }
 
-
-
 /*imagenes*/
 img{
     width: 40px;
@@ -155,9 +151,6 @@ img{
 p{
     margin: 0px;
 }
-
-
-
 
 /*cards*/
 .card{
@@ -269,6 +262,30 @@ p{
 /* ----------------------------------------------------- */
 
 /* Parte Formulario */
+
+/* para sacar los bordes mas adelante */
+/* .header-formulario .menu{
+    border:none
+} */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-y-boton{
+    display: flex;
+    align-items: center;
+}
+
+div ul li{
+    border:none
+}
+
+.menu{
+    width: 14%;
+    background-color: var(--1ro-400);
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -287,13 +304,13 @@ form {
 }
 /* boton de hamburguesa */
 .hamburger-btn {
+    display: flex;
     width: 40px;
     height: 40px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: 2px solid black;
     border-radius: 8px;
     cursor: pointer;
     background-color:  var(--1ro-400); 
@@ -301,10 +318,11 @@ form {
 
 .line {
     width: 30px;
-    height: 2px;
+    height: 4px;
     background-color: white;
     border-radius: 2px;
 }
+
 /* ----------------------------------------------------- */
 /* ----------------------------------------------------- */
 
