@@ -1,21 +1,13 @@
-/* Pruebas para carga */
-
-/* setInterval(() => {
-    let numDom = document.querySelector("#carga")
-    let i = 0;
-    let flag = false;
-    while (!flag) {
-        
-        
+let valores = [0, 10, 20, 25, 30, 40, 55, 60, 77, 80, 90, 100];
+let i = 0;
+let intervalo = setInterval(() => {
+    let numDom = document.querySelector("#carga");
     
-        numDom.innerHTML += `${i++}0`;
-        if (i <= 10) {
-            flag =true;
-        }
-        console.log(i);
-        console.log(numDom);
-        
-        
+    numDom.innerHTML = valores[i] + "%"; 
+    
+    i++; 
+    
+    if (i >= valores.length) { 
+        clearInterval(intervalo);
     }
-    
-}, 1000); */
+}, 500); 
