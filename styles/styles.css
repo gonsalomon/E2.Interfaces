@@ -309,11 +309,45 @@ div ul li{
  
 }
 
-form {
+.contenedorFormulario{
     display: flex;
+    justify-content: center;
+    width: 45%;
+    margin-top: 2%;
+    margin-left: 25%;
+    background-color: var(--1ro-500);
+    margin-bottom: 2%;
+    border-radius: 5%;
+}
+
+form {
+    color: white;
     flex-direction: column;
-    padding: 10%;
-    width: 60%;
+    padding: 6%;
+    width: 35%;
+}
+
+form img{
+    margin-top: 7%;
+    width: auto;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+form input {
+    margin-top: 1%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: var(--1ro-400);
+    color: white;
+    font-size: large;
+}
+form a{
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    color: white;
+    font-style: none;
 }
 
 /* parte de carga */
@@ -335,6 +369,7 @@ form {
     background-color: #902490;
 
 }
+
 @keyframes example {
     0%   {background-color: red;width: 10%;}
     25%  {background-color: yellow;width: 20%;}
@@ -375,8 +410,8 @@ form {
     display: none;
 }
 footer img{
-    width: 14%;
-    height: 10%;
+    width: 10%;
+    height: 6%;
 }
 
 /* ----------------------------------------------------- */
