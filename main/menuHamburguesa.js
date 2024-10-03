@@ -10,7 +10,8 @@ function abrirMenu(event) {
     event.preventDefault();
     menu.classList.remove("oculto");  
     boton.style.display = "none"; 
-    espacio.style.display = "flex"
+    espacio.style.display = "flex";
+    menu.style.animationName = "menuResponsive";
 }
 
 function cerrarMenu() {

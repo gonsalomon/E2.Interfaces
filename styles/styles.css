@@ -322,27 +322,29 @@ div ul li{
     border:none
 }
 
-
-
 .menu{
-    width: 14%;
+    width: 16%;
     background-color: var(--1ro-400);
     position: fixed;
     border-radius: 10px;
+    
+    animation-duration: 0.5s;
 }
-
+@keyframes menuResponsive{
+    0%   {background-color:var(--1ro-400);width: 4%;}
+    50%  {background-color:var(--1ro-400);width: 8%;}
+    75%  {background-color: var(--1ro-400);width: 12%;}
+    100% {background-color: var(--1ro-400);width: 16%;}
+}
 .oculto {
     display: none;
 }
-
 
 #close-btn{
     border-radius: 10px;
     border-color: transparent;
     transform: translate(2px);
 }
-
-
 
 .contenedorFormulario{
     display: flex;
@@ -401,21 +403,21 @@ form a{
     animation-name: example;
     animation-duration: 7s;
     position: relative;
-    background-color: #902490;
+    background-color:var(--1ro-600);
 
 }
 
 @keyframes example {
-    0%   {background-color: red;width: 10%;}
-    25%  {background-color: yellow;width: 20%;}
-    50%  {background-color: blue;width: 30%;}
-    100% {background-color: green;width: 40%;}
+    0%   {background-color:var(--1ro-300);width: 10%;}
+    25%  {background-color:var(--1ro-400);width: 20%;}
+    50%  {background-color: var(--1ro-500);width: 30%;}
+    100% {background-color: var(--1ro-600);width: 40%;}
 }
 /* fin parte de carga */
 .header-formulario{
     width: 100%;
     height: 40%;
-    background-color: var(--1ro-300);
+    background-color:  var(--1ro-500);
     padding: 1%;
 }
 
@@ -446,10 +448,13 @@ form a{
 }
 
 footer img{
-    width: 10%;
-    height: 6%;
+    width: 9%;
+    height: 5%;
 }
-
+footer ul li{
+    color: white;
+    margin-top: 3%;
+}
 /* ----------------------------------------------------- */
 /* ----------------------------------------------------- */
     
