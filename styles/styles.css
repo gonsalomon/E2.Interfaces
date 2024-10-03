@@ -303,18 +303,24 @@
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 footer{
     display: flex;
+
     justify-content: space-around;
 }
 
 .input-y-boton{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
-
+.input-y-boton img{
+    width: 15%;
+    height: 100%;
+}
 div ul li{
     border:none
 }
@@ -322,12 +328,20 @@ div ul li{
 
 
 .menu{
-    width: 14%;
+    width: 16%;
     background-color: var(--1ro-400);
     position: fixed;
+    margin-top: 8%;
     border-radius: 10px;
+    
+    animation-duration: 0.5s;
 }
-
+@keyframes menuResponsive{
+    0%   {background-color:var(--1ro-400);width: 4%;}
+    50%  {background-color:var(--1ro-400);width: 8%;}
+    75%  {background-color: var(--1ro-400);width: 12%;}
+    100% {background-color: var(--1ro-400);width: 16%;}
+}
 .oculto {
     display: none;
 }
@@ -337,6 +351,10 @@ div ul li{
     border-radius: 10px;
     border-color: transparent;
     transform: translate(2px);
+    background-color: rgb(253, 26, 26);
+    color: white;
+    width: auto;
+    height: auto;
 }
 
 
@@ -356,7 +374,7 @@ form {
     color: white;
     flex-direction: column;
     padding: 6%;
-    width: 35%;
+    width: 40%;
 }
 
 form img{
