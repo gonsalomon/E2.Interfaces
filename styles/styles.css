@@ -165,12 +165,9 @@
             margin: 10px;
             background-color: var(--1ro-300);
             border-radius: 0px 0px 10px 10px;
+            transform: translate(0px);
         }
-        .btn_carrucel:active{
-            .card{
-                transform: translate(50px);
-            }
-        }
+
         
         .img_card {
             width: 150px;
@@ -322,29 +319,27 @@ div ul li{
     border:none
 }
 
+
+
 .menu{
-    width: 16%;
+    width: 14%;
     background-color: var(--1ro-400);
     position: fixed;
     border-radius: 10px;
-    
-    animation-duration: 0.5s;
 }
-@keyframes menuResponsive{
-    0%   {background-color:var(--1ro-400);width: 4%;}
-    50%  {background-color:var(--1ro-400);width: 8%;}
-    75%  {background-color: var(--1ro-400);width: 12%;}
-    100% {background-color: var(--1ro-400);width: 16%;}
-}
+
 .oculto {
     display: none;
 }
+
 
 #close-btn{
     border-radius: 10px;
     border-color: transparent;
     transform: translate(2px);
 }
+
+
 
 .contenedorFormulario{
     display: flex;
@@ -403,21 +398,21 @@ form a{
     animation-name: example;
     animation-duration: 7s;
     position: relative;
-    background-color:var(--1ro-600);
+    background-color: #902490;
 
 }
 
 @keyframes example {
-    0%   {background-color:var(--1ro-300);width: 10%;}
-    25%  {background-color:var(--1ro-400);width: 20%;}
-    50%  {background-color: var(--1ro-500);width: 30%;}
-    100% {background-color: var(--1ro-600);width: 40%;}
+    0%   {background-color: red;width: 10%;}
+    25%  {background-color: yellow;width: 20%;}
+    50%  {background-color: blue;width: 30%;}
+    100% {background-color: green;width: 40%;}
 }
 /* fin parte de carga */
 .header-formulario{
     width: 100%;
     height: 40%;
-    background-color:  var(--1ro-500);
+    background-color: var(--1ro-300);
     padding: 1%;
 }
 
@@ -448,13 +443,10 @@ form a{
 }
 
 footer img{
-    width: 9%;
-    height: 5%;
+    width: 10%;
+    height: 6%;
 }
-footer ul li{
-    color: white;
-    margin-top: 3%;
-}
+
 /* ----------------------------------------------------- */
 /* ----------------------------------------------------- */
     
@@ -512,12 +504,6 @@ footer ul li{
                 translate: 4px;
             }
         }
-
-        .btn_carrucel:active{
-            .card{
-                transform: translate(10px);
-            }
-        }
     
         /*flechas*/
         .flecha_carrucel_izq {
@@ -554,6 +540,29 @@ footer ul li{
             background-color: var(--1ro-500)
         }
     }*/
+
+    @keyframes animacion_card_der {
+        0%{
+            transform: translate(25px);
+        }
+        50%{
+            transform: translate(50px);
+        }
+        100%{
+            transform: translate(75px);
+        }
+    }
+    @keyframes animacion_card_izq {
+        0%{
+            transform: translate(-25px);
+        }
+        50%{
+            transform: translate(-50px);
+        }
+        100%{
+            transform: translate(-75px);
+        }
+    }
     
 
 }
