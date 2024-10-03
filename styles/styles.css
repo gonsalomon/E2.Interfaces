@@ -166,7 +166,12 @@
             background-color: var(--1ro-300);
             border-radius: 0px 0px 10px 10px;
         }
-    
+        .btn_carrucel:active{
+            .card{
+                transform: translate(50px);
+            }
+        }
+        
         .img_card {
             width: 150px;
             height: 221px;
@@ -452,12 +457,19 @@ footer img{
         /*carrucel*/
         .contenedor_carrucel_y_botones {
             margin: 10px 0px 10px 0px;
+            overflow: hidden;
         }
     
         .carrucel {
             display: flex;
             flex-direction: row;
             background-color: var(--1ro-600);
+            /* vw es lo que nos da el tamaño orizontalmente el carrucel
+            importante */
+            width: 95vw;
+            overflow: hidden;
+            /* ------------------------------ */
+
         }
     
         .grande {
@@ -493,6 +505,12 @@ footer img{
     
             .flecha_carrucel_der {
                 translate: 4px;
+            }
+        }
+
+        .btn_carrucel:active{
+            .card{
+                transform: translate(10px);
             }
         }
     
@@ -532,4 +550,5 @@ footer img{
         }
     }*/
     
+
 }
