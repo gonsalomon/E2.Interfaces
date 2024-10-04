@@ -298,56 +298,62 @@
 
 /* Parte Formulario */
 
-/* para sacar los bordes mas adelante */
+/* para sacar los bordes más adelante */
 /* .header-formulario .menu{
     border:none
 } */
 
-header{
+header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    height: auto; /* Cambiado a auto para evitar altura fija */
 }
 
-footer{
+footer {
     display: flex;
-
     justify-content: space-around;
 }
 
-.input-y-boton{
+.input-y-boton {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.input-y-boton img{
+
+.input-y-boton img {
     width: 15%;
     height: 100%;
 }
-div ul li{
-    border:none
+
+div ul li {
+    border: none;
 }
 
-.menu{
+.menu {
     width: 16%;
     background-color: var(--1ro-500);
-    position: fixed;
-    margin-top: 8%;
     border-radius: 10px;
     color: white;
+    top: 5%;
+    right: 82%;
     animation-duration: 0.5s;
+    position: fixed; /* Corregido para fijar el menú */
+    z-index: 1000; /* Asegurar que esté sobre otros elementos */
 }
-@keyframes menuResponsive{
-    0%   {background-color:var(--1ro-300);width: 4%;}
-    50%  {background-color:var(--1ro-300);width: 8%;}
-    75%  {background-color: var(--1ro-400);width: 12%;}
-    100% {background-color: var(--1ro-400);width: 16%;}
+
+@keyframes menuResponsive {
+    0%   {background-color: var(--1ro-300); width: 4%;}
+    50%  {background-color: var(--1ro-300); width: 8%;}
+    75%  {background-color: var(--1ro-400); width: 12%;}
+    100% {background-color: var(--1ro-400); width: 16%;}
 }
+
 .oculto {
     display: none;
 }
 
-#close-btn{
+#close-btn {
     border-radius: 10px;
     border-color: transparent;
     transform: translate(2px);
@@ -357,15 +363,15 @@ div ul li{
     height: auto;
 }
 
-.contenedorFormulario{
+.contenedorFormulario {
     display: flex;
     justify-content: center;
     width: 45%;
-    margin-top: 2%;
     margin-left: 25%;
     background-color: var(--1ro-500);
     margin-bottom: 2%;
     border-radius: 5%;
+    margin-top: 50px; /* Ajuste para evitar el solapamiento */
 }
 
 form {
@@ -375,7 +381,7 @@ form {
     width: 40%;
 }
 
-form img{
+form img {
     margin-top: 7%;
     width: auto;
     height: auto;
@@ -390,7 +396,8 @@ form input {
     color: white;
     font-size: large;
 }
-form a{
+
+form a {
     display: flex;
     justify-content: center;
     margin: 5%;
@@ -399,7 +406,7 @@ form a{
 }
 
 /* parte de carga */
-.contenedorCarga{
+.contenedorCarga {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -411,28 +418,34 @@ form a{
     border: black solid 3px;
     border-radius: 10px;
     margin-top: 1%;
-    animation-name: example;
-    animation-duration: 7s;
     position: relative;
-    background-color:var(--1ro-600);
-
+    background-color: var(--1ro-600);
+    animation: example 7s ease-in;
+    transform-origin: left;
 }
 
 @keyframes example {
-    0%   {background-color:var(--1ro-300);width: 10%;}
-    25%  {background-color:var(--1ro-400);width: 20%;}
-    50%  {background-color: var(--1ro-500);width: 30%;}
-    100% {background-color: var(--1ro-600);width: 40%;}
-}
-/* fin parte de carga */
-.header-formulario{
-    width: 100%;
-    height: 40%;
-    background-color:  var(--1ro-500);
-    padding: 1%;
+    0%   {background-color: var(--1ro-300); transform: scaleX(0.25);}
+    25%  {background-color: var(--1ro-400); transform: scaleX(0.5);}
+    50%  {background-color: var(--1ro-500); transform: scaleX(0.75);}
+    100% {background-color: var(--1ro-600); transform: scaleX(1);}
 }
 
-/* boton de hamburguesa */
+/* fin parte de carga */
+.header-formulario {
+    width: 98%;
+    background-color: var(--1ro-500);
+    color: white;
+    position: relative; /* Cambiado de absolute a relative */
+    padding-bottom: 20px; /* Para asegurar que haya espacio con el formulario */
+}
+
+.fl.header_betwenn a {
+    text-decoration: none; /* Elimina el subrayado predeterminado */
+    color: black;
+}
+
+/* Botón de hamburguesa */
 .hamburger-btn {
     display: flex;
     width: 40px;
@@ -443,7 +456,7 @@ form a{
     align-items: center;
     border-radius: 8px;
     cursor: pointer;
-    background-color:  var(--1ro-400); 
+    background-color: var(--1ro-400); 
 }
 
 .line {
@@ -452,24 +465,26 @@ form a{
     background-color: white;
     border-radius: 2px;
 }
-.ayudaMenu{
+
+.ayudaMenu {
     display: none;
     width: 40px;
     height: 40px;
 }
 
-footer img{
+footer img {
     width: 9%;
     height: 5%;
 }
-footer ul li{
+
+footer ul li {
     color: white;
     margin-top: 3%;
 }
+
 /* ----------------------------------------------------- */
 /* ----------------------------------------------------- */
-    
-    
+
         /*carrucel*/
         .contenedor_carrucel_y_botones {
             margin: 10px 0px 10px 0px;
