@@ -17,5 +17,5 @@ function abrirMenu(event) {
 function cerrarMenu() {
     menu.classList.add("oculto");     
     boton.style.display = "flex";     // Muestra nuevamente el botón de hamburguesa aplicando flex
-    espacio.style.display = "none";
+
 }
