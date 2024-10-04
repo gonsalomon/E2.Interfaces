@@ -165,7 +165,10 @@
             margin: 10px;
             background-color: var(--1ro-300);
             border-radius: 0px 0px 10px 10px;
-            transform: translate(0px);
+            display: flex;
+            flex-direction: column;
+            transition: all 2s;
+            transition-timing-function: cubic-bezier(0.88, 0, 0.41, 1);
         }
 
         
@@ -559,7 +562,7 @@ footer img{
         }
     }*/
 
-    @keyframes animacion_card_der {
+    @keyframes animacionCardDer {
         0%{
             transform: translate(25px);
         }
@@ -570,7 +573,7 @@ footer img{
             transform: translate(75px);
         }
     }
-    @keyframes animacion_card_izq {
+    @keyframes animacionCardIzq {
         0%{
             transform: translate(-25px);
         }
