@@ -154,10 +154,67 @@
             width: 60px;
             height: 60px;
         }
+
         
+        
+        /* PAGINA JUEGO
+        -------------------------------------------------------------------------------------------------------------
+        -------------------------------------------------------------------------------------------------------------------------  */
+        .conteinerJuego{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        }
+
+        .juego{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70%;
+        }
+
+        .imgJuego{
+            width: 100%;
+            height: 100%;
+        }
+
+        section div button.btnGame{
+            width: 20%; 
+            position: absolute;
+        }
+
+        .descripcion{
+            width: 30%;
+            background-color: var(--1ro-600);
+        }
+
+        .listaJuego{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        .imagenCompartirJuego{
+            height: 30px;
+            width: 30px;
+        }
+
+        .imagenPublicidad{
+            width: 100%;
+            height: 120px;
+            margin: 1%;
+        }
+        
+        /* ------------------------------------------------------------------------------------------------------- */
+        /* foro */
+            
+        /* --------------------------------------------------------------------------------------------- */
         /*parrafos*/
-        p {
+        p{
             margin: 0px;
+        }
+        p, h2, h3{
+            color: white;
         }
     
         /*cards*/
@@ -342,13 +399,6 @@ div ul li {
     z-index: 1000; /* Asegurar que esté sobre otros elementos */
 }
 
-@keyframes menuResponsive {
-    0%   {background-color: var(--1ro-300); width: 4%;}
-    50%  {background-color: var(--1ro-300); width: 8%;}
-    75%  {background-color: var(--1ro-400); width: 12%;}
-    100% {background-color: var(--1ro-400); width: 16%;}
-}
-
 .oculto {
     display: none;
 }
@@ -485,7 +535,7 @@ footer ul li {
 /* ----------------------------------------------------- */
 /* ----------------------------------------------------- */
 
-        /*carrucel*/
+/*carrucel*/
         .contenedor_carrucel_y_botones {
             margin: 10px 0px 10px 0px;
             overflow: hidden;
@@ -500,9 +550,9 @@ footer ul li {
             width: 95vw;
             overflow: hidden;
             /* ------------------------------ */
-
+            
         }
-    
+        
         .grande {
             display: flex;
         }
@@ -513,7 +563,7 @@ footer ul li {
             justify-content: end;
             background-color: var(--1ro-600);
         }
-    
+        
         .btn_carrucel {
             display: flex;
             height: auto;
@@ -538,7 +588,7 @@ footer ul li {
                 translate: 4px;
             }
         }
-    
+        
         /*flechas*/
         .flecha_carrucel_izq {
             height: 0px;
@@ -548,7 +598,7 @@ footer ul li {
             border-bottom: 5px solid transparent;
             transition: translate 250ms;
         }
-    
+        
         .flecha_carrucel_der {
             height: 0px;
             width: 0px;
@@ -556,26 +606,26 @@ footer ul li {
             border-top: 5px solid transparent;
             border-bottom: 5px solid transparent;
             transition:
-                translate 250ms;
+            translate 250ms;
         }
     
     
     
         /* animaciones y transformaciones */
         /*
-    @keyframes desplega_menu{
+        @keyframes desplega_menu{
         0%{
             background-color: var(--1ro-500);
         }
         50%{
             background-color: green;
-        }
-        100%{
-            background-color: var(--1ro-500)
-        }
-    }*/
-
-    @keyframes animacionCardDer {
+            }
+            100%{
+                background-color: var(--1ro-500)
+                }
+                }*/
+                
+                @keyframes animacionCardDer {
         0%{
             transform: translate(25px);
         }
@@ -598,5 +648,12 @@ footer ul li {
         }
     }
     
-
+    @keyframes menuResponsive {
+        0%   {background-color: var(--1ro-300); width: 4%;}
+        50%  {background-color: var(--1ro-300); width: 8%;}
+        75%  {background-color: var(--1ro-400); width: 12%;}
+        100% {background-color: var(--1ro-400); width: 16%;}
+    }
+    
+    
 }
