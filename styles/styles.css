@@ -207,7 +207,58 @@
         
         /* ------------------------------------------------------------------------------------------------------- */
         /* foro */
+            .foro{
+                margin: 10px 20px 10px 20px;
+                border-radius: 10px;
+                background-color: var(--1ro-600);
+                align-items: center;
+            }
+
+            .gmail{
+                margin: 0%;
+                font-weight: lighter;
+            }
+
+            .foroTexto{
+                background-color: var(--1ro-300);
+                width: 95%;
+                min-height: 50px;
+                margin: 5px;
+                border-radius: 5px;
+            }
+
+            .imgForo{
+                margin: 0px 5px;
+            }
+
+            .foroRedaccion, .foroEnviado{
+                margin:10px 10px ;
+                background-color: var(--1ro-400);
+                border-radius: 10px;
+
+            }
             
+            .foroEnviado{
+                display: grid;
+                justify-items: center;
+            }
+
+            .foroRedaccion{
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-around;
+            }
+
+            .imputForo{
+                height: 20px;
+                border-radius: 5px;
+                border-color: transparent;
+            }
+
+            .contieneUsuario{
+                display: flex;
+                width: 100%;
+            }
         /* --------------------------------------------------------------------------------------------- */
         /*parrafos*/
         p{
