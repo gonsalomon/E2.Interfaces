@@ -34,12 +34,13 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding: 1rem;
     margin: auto;
-
+    
 }
 
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* media para celulares */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+@media only screen and (max-width: 660px) {
 
 
 ul {
@@ -139,7 +140,7 @@ img {
 /* PAGINA JUEGO
 -------------------------------------------------------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------------------------  */
-.conteinerJuego {
+.conteinerJuego{
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -149,49 +150,53 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 100%;
 }
 
 .imgJuego {
     width: 100%;
-    height: 100%;
+    height: 90vh;
 }
 
-section div button.btnGame {
-    width: 20%;
+section div button.btnGame{
+    width: 20%; 
     position: absolute;
 }
 
-.descripcion {
+.descripcion{
     width: 30%;
     background-color: var(--1ro-600);
+}
+.descripcionTexto{
+    display: none;
 }
 
 .listaJuego {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+    margin: 0px;
 }
 
-.imagenCompartirJuego {
+.imagenCompartirJuego{
     height: 30px;
     width: 30px;
 }
 
 .imagenPublicidad {
     width: 100%;
-    height: 120px;
+    height: 10vh;
     margin: 1%;
 }
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* foro */
-.foro {
-    margin: 10px 20px 10px 20px;
-    border-radius: 10px;
-    background-color: var(--1ro-600);
-    align-items: center;
-}
+    .foro{
+        margin: 10px 20px 10px 20px;
+        border-radius: 10px;
+        background-color: var(--1ro-600);
+        align-items: center;
+    }
 
 .gmail {
     margin: 0%;
@@ -206,9 +211,9 @@ section div button.btnGame {
     border-radius: 5px;
 }
 
-.imgForo {
-    margin: 0px 5px;
-}
+    .imgForo{
+        margin: 0px 5px;
+    }
 
 .foroRedaccion,
 .foroEnviado {
@@ -223,11 +228,11 @@ section div button.btnGame {
     justify-items: center;
 }
 
-.foroRedaccion {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-}
+    .foroRedaccion{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
 
 .imputForo {
     height: 20px;
@@ -235,11 +240,10 @@ section div button.btnGame {
     border-color: transparent;
 }
 
-.contieneUsuario {
-    display: flex;
-    width: 100%;
-}
-
+    .contieneUsuario{
+        display: flex;
+        width: 100%;
+    }
 /* --------------------------------------------------------------------------------------------- */
 /*parrafos*/
 p {
@@ -451,14 +455,21 @@ form {
 }
 
 .line {
-    width: 30px;
-    height: 4px;
+width: 30px;
+height: 4px;
+background-color: white;
+border-radius: 2px;
 }
 
-#close-btn {
-    border-radius: 10px;
-    background-color: rgb(253, 26, 26);
-    color: white;
+.ayudaMenu {
+display: none;
+width: 40px;
+height: 40px;
+}
+
+footer img {
+width: 9%;
+height: 5%;
 }
 
 footer ul li {
@@ -611,40 +622,41 @@ footer ul li {
     }
 }
 
+}
 
 
 
 
-@media only screen and (min-width: 660px) {
-
-    ul,
-    main,
-    section,
-    div {
-        border: #3d3d3d solid 1px;
-    }
-
-    ul {
-        list-style: none;
-    }
-
-    li {
-        padding: 0.2rem;
-        padding-left: 0.4rem;
-        padding-right: 0.4rem;
-    }
-
-    body {
-        background-color: var(--1ro-200);
-        margin: 0px;
-    }
-
-    .usuario {
-        width: 10%;
-        height: 30%;
-        background-color: #570808;
-    }
-
+    @media only screen and (min-width: 660px) {
+    
+            ul,
+            main,
+            section,
+            div {
+                border: #3d3d3d solid 1px;
+            }
+    
+            ul {
+                list-style: none;
+            }
+    
+            li {
+                padding: 0.2rem;
+                padding-left: 0.4rem;
+                padding-right: 0.4rem;
+            }
+    
+            body {
+                background-color: var(--1ro-200);
+                margin: 0px;
+            }
+    
+            .usuario {
+                width: 10%;
+                height: 30%;
+                background-color: #570808;
+            }
+    
 
 
     /*distribución del espacio*/
@@ -837,33 +849,29 @@ footer ul li {
         border-color: transparent;
     }
 
-    .contieneUsuario {
-        display: flex;
-        width: 100%;
-    }
-
-    /* --------------------------------------------------------------------------------------------- */
-    /*parrafos*/
-    p {
-        margin: 0px;
-    }
-
-    p,
-    h2,
-    h3 {
-        color: white;
-    }
-
-    /*cards*/
-    .card {
-        margin: 10px;
-        background-color: var(--1ro-300);
-        border-radius: 0px 0px 10px 10px;
-        display: flex;
-        flex-direction: column;
-        transition: all 1s;
-        transition-timing-function: cubic-bezier(0.88, 0, 0.41, 1);
-    }
+            .contieneUsuario{
+                display: flex;
+                width: 100%;
+            }
+        /* --------------------------------------------------------------------------------------------- */
+        /*parrafos*/
+        p{
+            margin: 0px;
+        }
+        p, h2, h3{
+            color: white;
+        }
+    
+        /*cards*/
+        .card {
+            margin: 10px;
+            background-color: var(--1ro-300);
+            border-radius: 0px 0px 10px 10px;
+            display: flex;
+            flex-direction: column;
+            transition: all 1s;
+            transition-timing-function: cubic-bezier(0.88, 0, 0.41, 1);
+        }
 
 
     .img_card {
@@ -1378,26 +1386,11 @@ footer ul li {
     }
 
     @keyframes menuResponsive {
-        0% {
-            background-color: var(--1ro-300);
-            width: 4%;
-        }
-
-        50% {
-            background-color: var(--1ro-300);
-            width: 8%;
-        }
-
-        75% {
-            background-color: var(--1ro-400);
-            width: 12%;
-        }
-
-        100% {
-            background-color: var(--1ro-400);
-            width: 16%;
-        }
+        0%   {background-color: var(--1ro-300); width: 4%;}
+        50%  {background-color: var(--1ro-300); width: 8%;}
+        75%  {background-color: var(--1ro-400); width: 12%;}
+        100% {background-color: var(--1ro-400); width: 16%;}
     }
-
-
+    
+    
 }
