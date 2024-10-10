@@ -36,7 +36,669 @@
     margin: auto;
     
 }
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* media para celulares */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+
+    ul {
+        list-style: none;
+    }
+
+    li {
+        padding: 0.2rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+
+    body {
+        background-color: var(--1ro-200);
+        margin: 0px;
+    }
+
+
     
+    /*distribución del espacio*/
+.fl {
+    display: flex;
+    flex-direction: column;
+}
+
+.fl-just-centro {
+    display: flex;
+    justify-content: center;
+}
+
+.fl-just-parejo {
+    justify-content: space-evenly;
+}
+
+.fl-just-lados {
+    justify-content: space-between;
+}
+
+.cntr-v {
+    align-items: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.navs_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img_sentro {
+    display: flex;
+    justify-content: center;
+}
+
+.header_betwenn {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*REGLAS INDIVIDUALES*/
+/*acá se regulan las moléculas/organismos básicos de la plantilla*/
+
+/*secciones generales*/
+.container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+    
+header {
+    background-color: var(--1ro-400);
+}
+
+footer {
+    background-color: var(--1ro-400);
+    margin-top: auto;
+}
+
+/*imagenes*/
+img {
+    width: 25px;
+    height: 25px;
+}
+
+.img_footer {
+    width: 60px;
+    height: 60px;
+}
+
+
+
+/* PAGINA JUEGO
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------  */
+.conteinerJuego{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.juego{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.imgJuego{
+    width: 100%;
+    height: 100%;
+}
+
+section div button.btnGame{
+    width: 20%; 
+    position: absolute;
+}
+
+.descripcion{
+    width: 30%;
+    background-color: var(--1ro-600);
+}
+
+.listaJuego{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.imagenCompartirJuego{
+    height: 30px;
+    width: 30px;
+}
+
+.imagenPublicidad{
+    width: 100%;
+    height: 120px;
+    margin: 1%;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/* foro */
+    .foro{
+        margin: 10px 20px 10px 20px;
+        border-radius: 10px;
+        background-color: var(--1ro-600);
+        align-items: center;
+    }
+
+    .gmail{
+        margin: 0%;
+        font-weight: lighter;
+    }
+
+    .foroTexto{
+        background-color: var(--1ro-300);
+        width: 95%;
+        min-height: 50px;
+        margin: 5px;
+        border-radius: 5px;
+    }
+
+    .imgForo{
+        margin: 0px 5px;
+    }
+
+    .foroRedaccion, .foroEnviado{
+        margin:10px 10px ;
+        background-color: var(--1ro-400);
+        border-radius: 10px;
+
+    }
+    
+    .foroEnviado{
+        display: grid;
+        justify-items: center;
+    }
+
+    .foroRedaccion{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    .imputForo{
+        height: 20px;
+        border-radius: 5px;
+        border-color: transparent;
+    }
+
+    .contieneUsuario{
+        display: flex;
+        width: 100%;
+    }
+/* --------------------------------------------------------------------------------------------- */
+/*parrafos*/
+p{
+    margin: 0px;
+}
+p, h2, h3{
+    color: white;
+}
+
+/*cards*/
+.card {
+    margin: 10px;
+    background-color: var(--1ro-300);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    transition: all 1s;
+    transition-timing-function: cubic-bezier(0.88, 0, 0.41, 1);
+}
+
+
+.img_card {
+    width: 150px;
+    height: 221px;
+}
+
+.btn_card {
+    width: 80%;
+    height: 25px;
+    font-size: small;  
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
+    border: 0px;
+    border-radius: 6px;
+    background-color: var(--1ro-500);
+    color: white;
+    box-shadow: none;
+    transition: 
+    box-shadow 250ms,
+    font-size 250ms;
+}
+
+.btn_card_compra {
+    color: var(--2do-300);
+}
+
+.btn_compra_img {
+    height: 0px;
+    width: 0px;
+    transform: translate(5px);
+    transition:
+    height 250ms,
+    width 250ms;
+}
+
+.animation_btn_play {
+    border: var(--1ro-500) solid 1px;
+    transform: translate(5px);
+    transition: 250ms;
+}
+
+
+
+
+
+/*animacion btn_card*/
+.btn_card:hover {
+    box-shadow: 0 0 20px var(--1ro-500);
+    font-size: large;
+    .animation_btn_play {
+        margin: 1px;
+        height: 0px;
+        width: 0px;
+        border-left: 14px solid var(--1ro-100);
+        border-top: 7px solid transparent;
+        border-bottom: 7px solid transparent;
+    }
+    .btn_compra_img {
+        height: 15px;
+        width: 15px;
+    }
+}
+
+
+
+
+.text_card {
+    margin: 0px;
+    color: white;
+}
+
+/*duscador*/
+.browser {
+    align-items: center;
+}
+
+/*menú hamburguesa*/
+.menu_hamburguer {
+    width: 40px;
+    height: 40px;
+    background-color: var(--1ro-500);
+    justify-content: space-evenly;
+    border-radius: 10px;
+    align-items: center;
+    /*transition:<propiedad><duracion><><>*/
+    transition: background-color 1s, width 1s, height 1s;
+}
+
+.menu_hamburguer:hover {
+    width: 100px;
+    height: 100px;
+    background-color: var(--3ro-500);
+    /*justify-content: space-evenly;*/
+    border-radius: 10px;
+    align-items: center;
+
+
+.elems_menu_hamburguer{
+background-color: black;
+transform: rotate(45deg) translate(10px);
+}
+.elems_menu_hamburguer_inferior{
+transform: rotate(-45deg) translate(-10px, -50px);
+}
+
+}
+.elems_menu_hamburguer{
+height: 12%;
+width: 60%;
+background-color: var(--1ro-100);
+border-radius: 10px;
+transition: all 2s;
+}
+
+
+.menu_hamburguerWIP{
+display: none;
+}
+
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+
+/* Parte Formulario */
+
+/* para sacar los bordes más adelante */
+/* .header-formulario .menu{
+border:none
+} */
+
+header {
+display: flex;
+justify-content: space-around;
+align-items: center;
+height: auto; /* Cambiado a auto para evitar altura fija */
+}
+
+footer {
+display: flex;
+justify-content: space-around;
+}
+
+.input-y-boton {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.input-y-boton img {
+width: 15%;
+height: 100%;
+}
+
+div ul li {
+border: none;
+}
+
+.menu {
+width: 16%;
+background-color: var(--1ro-500);
+border-radius: 10px;
+color: white;
+top: 5%;
+position: fixed; /* Mantener como fixed */
+z-index: 1000;
+left: -50%; /* Comienza desde el 50% fuera de la pantalla */
+transform: translateX(0); /* Inicia en su posición visible */
+animation-duration: 0.5s;
+}
+
+@keyframes menuResponsive {
+0%   {background-color: var(--1ro-300); width: 4%;}
+50%  {background-color: var(--1ro-300); width: 8%;}
+75%  {background-color: var(--1ro-400); width: 12%;}
+100% {background-color: var(--1ro-400); width: 16%;}
+}
+
+.oculto {
+display: none;
+}
+
+#close-btn {
+border-radius: 10px;
+border-color: transparent;
+transform: translate(2px);
+background-color: rgb(253, 26, 26);
+color: white;
+width: auto;
+height: auto;
+}
+
+.contenedorFormulario {
+display: flex;
+justify-content: center;
+width: 45%;
+margin-left: 25%;
+background-color: var(--1ro-500);
+margin-bottom: 2%;
+border-radius: 5%;
+margin-top: 50px; /* Ajuste para evitar el solapamiento */
+}
+
+form {
+color: white;
+flex-direction: column;
+padding: 6%;
+width: 40%;
+}
+
+form img {
+margin-top: 7%;
+width: auto;
+height: auto;
+margin-bottom: 5%;
+}
+
+form input {
+margin-top: 1%;
+height: 40px;
+border-radius: 10px;
+background-color: var(--1ro-400);
+color: white;
+font-size: large;
+}
+
+form a {
+display: flex;
+justify-content: center;
+margin: 5%;
+color: white;
+font-style: none;
+}
+
+/* parte de carga */
+.contenedorCarga {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.carga {
+width: 40%;
+height: 40px;
+border: black solid 3px;
+border-radius: 10px;
+margin-top: 1%;
+position: relative;
+background-color: var(--1ro-600);
+animation: example 7s ease-in;
+transform-origin: left;
+}
+
+@keyframes example {
+0%   {background-color: var(--1ro-300); transform: scaleX(0.25);}
+25%  {background-color: var(--1ro-400); transform: scaleX(0.5);}
+50%  {background-color: var(--1ro-500); transform: scaleX(0.75);}
+100% {background-color: var(--1ro-600); transform: scaleX(1);}
+}
+
+/* fin parte de carga */
+.header-formulario {
+width: 100%;
+background-color: var(--1ro-500);
+color: white;
+position: relative; /* Cambiado de absolute a relative */
+padding-bottom: 20px; /* Para asegurar que haya espacio con el formulario */
+}
+
+.fl.header_betwenn a {
+text-decoration: none; /* Elimina el subrayado predeterminado */
+color: black;
+}
+
+/* Botón de hamburguesa */
+.hamburger-btn {
+display: flex;
+width: 40px;
+height: 40px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+border-radius: 8px;
+cursor: pointer;
+background-color: var(--1ro-400); 
+}
+
+.line {
+width: 30px;
+height: 4px;
+background-color: white;
+border-radius: 2px;
+}
+
+.ayudaMenu {
+display: none;
+width: 40px;
+height: 40px;
+}
+
+footer img {
+width: 9%;
+height: 5%;
+}
+
+footer ul li {
+color: white;
+margin-top: 3%;
+}
+
+/* ----------------------------------------------------- */
+/* ----------------------------------------------------- */
+
+/*carrucel*/
+.contenedor_carrucel_y_botones {
+    margin: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+
+.carrucel {
+    display: flex;
+    border-radius: 10px 10px 0px 0px;
+    flex-direction: row;
+    background-color: var(--1ro-600);
+    /* ------------------------------------------------------------------------------------------- */
+    /* vw es lo que nos da el tamaño orizontalmente el carrucel
+    importante */
+    width: 100vw;
+    overflow: hidden;
+    /* ------------------------------ */
+    
+}
+
+.grande {
+    display: flex;
+}
+
+/*botones carrucel*/
+.contenedor_btn_carrucel {
+    display: flex;
+    justify-content: center;
+    background-color: var(--1ro-600);
+    border-radius: 0px 0px 10px 10px;
+}
+
+.btn_carrucel {
+    display: flex;
+    height: auto;
+    width: 15px;
+    padding: 10px;
+    margin: 1px 3px 1px 3px;
+    border-radius: 25%;
+    background-color: var(--1ro-400);
+}
+
+.btn_carrucel_der {
+    justify-content: end;
+}
+
+.btn_carrucel:hover {
+
+    .flecha_carrucel_izq {
+        translate: -4px;
+    }
+
+    .flecha_carrucel_der {
+        translate: 4px;
+    }
+}
+
+/*flechas*/
+.flecha_carrucel_izq {
+    height: 0px;
+    width: 0px;
+    border-right: 14px solid var(--1ro-100);
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    transition: translate 250ms;
+}
+
+.flecha_carrucel_der {
+    height: 0px;
+    width: 0px;
+    border-left: 14px solid var(--1ro-100);
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    transition:
+    translate 250ms;
+}
+
+
+
+/* animaciones y transformaciones */
+/*
+@keyframes desplega_menu{
+0%{
+    background-color: var(--1ro-500);
+}
+50%{
+    background-color: green;
+    }
+    100%{
+        background-color: var(--1ro-500)
+        }
+        }*/
+        
+        @keyframes animacionCardDer {
+0%{
+    transform: translate(25px);
+}
+50%{
+    transform: translate(50px);
+}
+100%{
+    transform: translate(75px);
+}
+}
+@keyframes animacionCardIzq {
+0%{
+    transform: translate(-25px);
+}
+50%{
+    transform: translate(-50px);
+}
+100%{
+    transform: translate(-75px);
+}
+}
+
+@keyframes menuResponsive {
+0%   {background-color: var(--1ro-300); width: 4%;}
+50%  {background-color: var(--1ro-300); width: 8%;}
+75%  {background-color: var(--1ro-400); width: 12%;}
+100% {background-color: var(--1ro-400); width: 16%;}
+}
+
+
+
+
+
     @media only screen and (min-width: 660px) {
     
             ul,
@@ -746,667 +1408,4 @@ footer ul li {
     }
     
     
-}
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-/* media para celulares */
-/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-@media only screen and (max-width: 660px) {
-
-    ul {
-        list-style: none;
-    }
-
-    li {
-        padding: 0.2rem;
-        padding-left: 0.4rem;
-        padding-right: 0.4rem;
-    }
-
-    body {
-        background-color: var(--1ro-200);
-        margin: 0px;
-    }
-
-
-    
-    /*distribución del espacio*/
-.fl {
-    display: flex;
-    flex-direction: column;
-}
-
-.fl-just-centro {
-    display: flex;
-    justify-content: center;
-}
-
-.fl-just-parejo {
-    justify-content: space-evenly;
-}
-
-.fl-just-lados {
-    justify-content: space-between;
-}
-
-.cntr-v {
-    align-items: center;
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-
-.navs_footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.img_sentro {
-    display: flex;
-    justify-content: center;
-}
-
-.header_betwenn {
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-/*REGLAS INDIVIDUALES*/
-/*acá se regulan las moléculas/organismos básicos de la plantilla*/
-
-/*secciones generales*/
-.container {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-}
-    
-header {
-    background-color: var(--1ro-400);
-}
-
-footer {
-    background-color: var(--1ro-400);
-    margin-top: auto;
-}
-
-/*imagenes*/
-img {
-    width: 25px;
-    height: 25px;
-}
-
-.img_footer {
-    width: 60px;
-    height: 60px;
-}
-
-
-
-/* PAGINA JUEGO
--------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------------------  */
-.conteinerJuego{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-}
-
-.juego{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70%;
-}
-
-.imgJuego{
-    width: 100%;
-    height: 100%;
-}
-
-section div button.btnGame{
-    width: 20%; 
-    position: absolute;
-}
-
-.descripcion{
-    width: 30%;
-    background-color: var(--1ro-600);
-}
-
-.listaJuego{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
-.imagenCompartirJuego{
-    height: 30px;
-    width: 30px;
-}
-
-.imagenPublicidad{
-    width: 100%;
-    height: 120px;
-    margin: 1%;
-}
-
-/* ------------------------------------------------------------------------------------------------------- */
-/* foro */
-    .foro{
-        margin: 10px 20px 10px 20px;
-        border-radius: 10px;
-        background-color: var(--1ro-600);
-        align-items: center;
-    }
-
-    .gmail{
-        margin: 0%;
-        font-weight: lighter;
-    }
-
-    .foroTexto{
-        background-color: var(--1ro-300);
-        width: 95%;
-        min-height: 50px;
-        margin: 5px;
-        border-radius: 5px;
-    }
-
-    .imgForo{
-        margin: 0px 5px;
-    }
-
-    .foroRedaccion, .foroEnviado{
-        margin:10px 10px ;
-        background-color: var(--1ro-400);
-        border-radius: 10px;
-
-    }
-    
-    .foroEnviado{
-        display: grid;
-        justify-items: center;
-    }
-
-    .foroRedaccion{
-        display: flex;
-        align-items: flex-end;
-        justify-content: space-around;
-    }
-
-    .imputForo{
-        height: 20px;
-        border-radius: 5px;
-        border-color: transparent;
-    }
-
-    .contieneUsuario{
-        display: flex;
-        width: 100%;
-    }
-/* --------------------------------------------------------------------------------------------- */
-/*parrafos*/
-p{
-    margin: 0px;
-}
-p, h2, h3{
-    color: white;
-}
-
-/*cards*/
-.card {
-    margin: 10px;
-    background-color: var(--1ro-300);
-    border-radius: 0px 0px 10px 10px;
-    display: flex;
-    flex-direction: column;
-    transition: all 1s;
-    transition-timing-function: cubic-bezier(0.88, 0, 0.41, 1);
-}
-
-
-.img_card {
-    width: 150px;
-    height: 221px;
-}
-
-.btn_card {
-    width: 80%;
-    height: 25px;
-    font-size: small;  
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
-    border: 0px;
-    border-radius: 6px;
-    background-color: var(--1ro-500);
-    color: white;
-    box-shadow: none;
-    transition: 
-    box-shadow 250ms,
-    font-size 250ms;
-}
-
-.btn_card_compra {
-    color: var(--2do-300);
-}
-
-.btn_compra_img {
-    height: 0px;
-    width: 0px;
-    transform: translate(5px);
-    transition:
-    height 250ms,
-    width 250ms;
-}
-
-.animation_btn_play {
-    border: var(--1ro-500) solid 1px;
-    transform: translate(5px);
-    transition: 250ms;
-}
-
-
-
-
-
-/*animacion btn_card*/
-.btn_card:hover {
-    box-shadow: 0 0 20px var(--1ro-500);
-    font-size: large;
-    .animation_btn_play {
-        margin: 1px;
-        height: 0px;
-        width: 0px;
-        border-left: 14px solid var(--1ro-100);
-        border-top: 7px solid transparent;
-        border-bottom: 7px solid transparent;
-    }
-    .btn_compra_img {
-        height: 15px;
-        width: 15px;
-    }
-}
-
-
-
-
-.text_card {
-    margin: 0px;
-    color: white;
-}
-
-/*duscador*/
-.browser {
-    align-items: center;
-}
-
-/*menú hamburguesa*/
-.menu_hamburguer {
-    width: 40px;
-    height: 40px;
-    background-color: var(--1ro-500);
-    justify-content: space-evenly;
-    border-radius: 10px;
-    align-items: center;
-    /*transition:<propiedad><duracion><><>*/
-    transition: background-color 1s, width 1s, height 1s;
-}
-
-.menu_hamburguer:hover {
-    width: 100px;
-    height: 100px;
-    background-color: var(--3ro-500);
-    /*justify-content: space-evenly;*/
-    border-radius: 10px;
-    align-items: center;
-
-
-.elems_menu_hamburguer{
-background-color: black;
-transform: rotate(45deg) translate(10px);
-}
-.elems_menu_hamburguer_inferior{
-transform: rotate(-45deg) translate(-10px, -50px);
-}
-
-}
-.elems_menu_hamburguer{
-height: 12%;
-width: 60%;
-background-color: var(--1ro-100);
-border-radius: 10px;
-transition: all 2s;
-}
-
-
-.menu_hamburguerWIP{
-display: none;
-}
-
-/* ----------------------------------------------------- */
-/* ----------------------------------------------------- */
-
-/* Parte Formulario */
-
-/* para sacar los bordes más adelante */
-/* .header-formulario .menu{
-border:none
-} */
-
-header {
-display: flex;
-justify-content: space-around;
-align-items: center;
-height: auto; /* Cambiado a auto para evitar altura fija */
-}
-
-footer {
-display: flex;
-justify-content: space-around;
-}
-
-.input-y-boton {
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.input-y-boton img {
-width: 15%;
-height: 100%;
-}
-
-div ul li {
-border: none;
-}
-
-.menu {
-width: 16%;
-background-color: var(--1ro-500);
-border-radius: 10px;
-color: white;
-top: 5%;
-position: fixed; /* Mantener como fixed */
-z-index: 1000;
-left: -50%; /* Comienza desde el 50% fuera de la pantalla */
-transform: translateX(0); /* Inicia en su posición visible */
-animation-duration: 0.5s;
-}
-
-@keyframes menuResponsive {
-0%   {background-color: var(--1ro-300); width: 4%;}
-50%  {background-color: var(--1ro-300); width: 8%;}
-75%  {background-color: var(--1ro-400); width: 12%;}
-100% {background-color: var(--1ro-400); width: 16%;}
-}
-
-.oculto {
-display: none;
-}
-
-#close-btn {
-border-radius: 10px;
-border-color: transparent;
-transform: translate(2px);
-background-color: rgb(253, 26, 26);
-color: white;
-width: auto;
-height: auto;
-}
-
-.contenedorFormulario {
-display: flex;
-justify-content: center;
-width: 45%;
-margin-left: 25%;
-background-color: var(--1ro-500);
-margin-bottom: 2%;
-border-radius: 5%;
-margin-top: 50px; /* Ajuste para evitar el solapamiento */
-}
-
-form {
-color: white;
-flex-direction: column;
-padding: 6%;
-width: 40%;
-}
-
-form img {
-margin-top: 7%;
-width: auto;
-height: auto;
-margin-bottom: 5%;
-}
-
-form input {
-margin-top: 1%;
-height: 40px;
-border-radius: 10px;
-background-color: var(--1ro-400);
-color: white;
-font-size: large;
-}
-
-form a {
-display: flex;
-justify-content: center;
-margin: 5%;
-color: white;
-font-style: none;
-}
-
-/* parte de carga */
-.contenedorCarga {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-.carga {
-width: 40%;
-height: 40px;
-border: black solid 3px;
-border-radius: 10px;
-margin-top: 1%;
-position: relative;
-background-color: var(--1ro-600);
-animation: example 7s ease-in;
-transform-origin: left;
-}
-
-@keyframes example {
-0%   {background-color: var(--1ro-300); transform: scaleX(0.25);}
-25%  {background-color: var(--1ro-400); transform: scaleX(0.5);}
-50%  {background-color: var(--1ro-500); transform: scaleX(0.75);}
-100% {background-color: var(--1ro-600); transform: scaleX(1);}
-}
-
-/* fin parte de carga */
-.header-formulario {
-width: 100%;
-background-color: var(--1ro-500);
-color: white;
-position: relative; /* Cambiado de absolute a relative */
-padding-bottom: 20px; /* Para asegurar que haya espacio con el formulario */
-}
-
-.fl.header_betwenn a {
-text-decoration: none; /* Elimina el subrayado predeterminado */
-color: black;
-}
-
-/* Botón de hamburguesa */
-.hamburger-btn {
-display: flex;
-width: 40px;
-height: 40px;
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
-border-radius: 8px;
-cursor: pointer;
-background-color: var(--1ro-400); 
-}
-
-.line {
-width: 30px;
-height: 4px;
-background-color: white;
-border-radius: 2px;
-}
-
-.ayudaMenu {
-display: none;
-width: 40px;
-height: 40px;
-}
-
-footer img {
-width: 9%;
-height: 5%;
-}
-
-footer ul li {
-color: white;
-margin-top: 3%;
-}
-
-/* ----------------------------------------------------- */
-/* ----------------------------------------------------- */
-
-/*carrucel*/
-.contenedor_carrucel_y_botones {
-    margin: 10px 0px 10px 0px;
-    overflow: hidden;
-}
-
-.carrucel {
-    display: flex;
-    border-radius: 10px 10px 0px 0px;
-    flex-direction: row;
-    background-color: var(--1ro-600);
-    /* ------------------------------------------------------------------------------------------- */
-    /* vw es lo que nos da el tamaño orizontalmente el carrucel
-    importante */
-    width: 100vw;
-    overflow: hidden;
-    /* ------------------------------ */
-    
-}
-
-.grande {
-    display: flex;
-}
-
-/*botones carrucel*/
-.contenedor_btn_carrucel {
-    display: flex;
-    justify-content: center;
-    background-color: var(--1ro-600);
-    border-radius: 0px 0px 10px 10px;
-}
-
-.btn_carrucel {
-    display: flex;
-    height: auto;
-    width: 15px;
-    padding: 10px;
-    margin: 1px 3px 1px 3px;
-    border-radius: 25%;
-    background-color: var(--1ro-400);
-}
-
-.btn_carrucel_der {
-    justify-content: end;
-}
-
-.btn_carrucel:hover {
-
-    .flecha_carrucel_izq {
-        translate: -4px;
-    }
-
-    .flecha_carrucel_der {
-        translate: 4px;
-    }
-}
-
-/*flechas*/
-.flecha_carrucel_izq {
-    height: 0px;
-    width: 0px;
-    border-right: 14px solid var(--1ro-100);
-    border-top: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    transition: translate 250ms;
-}
-
-.flecha_carrucel_der {
-    height: 0px;
-    width: 0px;
-    border-left: 14px solid var(--1ro-100);
-    border-top: 7px solid transparent;
-    border-bottom: 7px solid transparent;
-    transition:
-    translate 250ms;
-}
-
-
-
-/* animaciones y transformaciones */
-/*
-@keyframes desplega_menu{
-0%{
-    background-color: var(--1ro-500);
-}
-50%{
-    background-color: green;
-    }
-    100%{
-        background-color: var(--1ro-500)
-        }
-        }*/
-        
-        @keyframes animacionCardDer {
-0%{
-    transform: translate(25px);
-}
-50%{
-    transform: translate(50px);
-}
-100%{
-    transform: translate(75px);
-}
-}
-@keyframes animacionCardIzq {
-0%{
-    transform: translate(-25px);
-}
-50%{
-    transform: translate(-50px);
-}
-100%{
-    transform: translate(-75px);
-}
-}
-
-@keyframes menuResponsive {
-0%   {background-color: var(--1ro-300); width: 4%;}
-50%  {background-color: var(--1ro-300); width: 8%;}
-75%  {background-color: var(--1ro-400); width: 12%;}
-100% {background-color: var(--1ro-400); width: 16%;}
-}
-
-
-
-
 }
