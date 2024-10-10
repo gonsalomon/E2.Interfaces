@@ -2,11 +2,14 @@ let pos = 0;
 let increment = 0 ;
 let btn_izq = document.querySelector(".btn_carrucel_izq");
 let btn_der = document.querySelector(".btn_carrucel_der");
-let cards = document.querySelectorAll(".card")
+let btn_der_flecha= document.querySelector(".flecha_carrucel_der");
+let btn_izq_flecha= document.querySelector(".flecha_carrucel_izq");
+let cards = document.querySelectorAll(".card");
 
 btn_der.addEventListener("click", escrolDer);
 btn_izq.addEventListener("click", escrolIzq);
-
+btn_der_flecha.addEventListener("click",escrolDer);
+btn_izq_flecha.addEventListener("click",escrolIzq);
 
 function escrolIzq(event){
     event.preventDefault();
