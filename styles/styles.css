@@ -166,11 +166,18 @@ section div button.btnGame{
     display: none;
 }
 
+.imagenCompartirJuego{
+    height: 20px;
+    width: 20px;
+    margin: 5px 5px 0px 5px;
+}
+
 .listaJuego{
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 0px;
+    align-items: center;
 }
 
 .imagenCompartirJuego{
@@ -623,7 +630,7 @@ margin-top: 3%;
 }
 
 /*botones carrucel*/
-.contenedor_btn_carrucel {
+.contenedor_btn_carrucel {  
     display: flex;
     justify-content: center;
     background-color: var(--1ro-600);
@@ -731,12 +738,12 @@ margin-top: 3%;
 /*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1*/
     @media only screen and (min-width: 660px) {
     
-            ul,
+/*             ul,
             main,
             section,
             div {
                 border: #3d3d3d solid 1px;
-            }
+            } */
     
             ul {
                 list-style: none;
@@ -751,6 +758,7 @@ margin-top: 3%;
             body {
                 background-color: var(--1ro-200);
                 margin: 0px;
+                padding: 0px;
             }
     
             .usuario {
@@ -857,19 +865,19 @@ margin-top: 3%;
         .conteinerJuego{
             display: flex;
             flex-direction: row;
-            justify-content: end;
+            justify-content: center;
         }
 
         .juego{
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 70%;
+            
         }
 
         .imgJuego{
-            width: 100%;
-            height: 100%;
+            width: 69vw;
+            height: 585px;
         }
 
         section div button.btnGame{
@@ -878,25 +886,40 @@ margin-top: 3%;
         }
 
         .descripcion{
-            width: 30%;
+            width: 28vw;
             background-color: var(--1ro-600);
+        }
+        .descripcionTexto{
+            margin: 5%;
+        }
+        .textoDescripcion{
+            font-size: small;
         }
 
         .listaJuego{
             display: flex;
-            flex-direction: row;
-            justify-content: flex-end;
+            flex-direction: row-reverse;
+            margin: 10px 0px 10px 0px;
+            padding: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        .liJuegoInstruccion{
+            display: flex;
+            align-items: center;
+            flex-direction: column; 
         }
 
         .imagenCompartirJuego{
-            height: 30px;
-            width: 30px;
+            height: 20px;
+            width: 20px;
+            margin: 0px 5px 0px 5px;
         }
 
         .imagenPublicidad{
             width: 100%;
             height: 120px;
-            margin: 1%;
+            margin: 1% 0% 1% 0%;
         }
         
         /* ------------------------------------------------------------------------------------------------------- */
@@ -906,11 +929,14 @@ margin-top: 3%;
                 border-radius: 10px;
                 background-color: var(--1ro-600);
                 align-items: center;
+                padding: 5px;
             }
 
             .gmail{
+                display: flex;
                 margin: 0%;
                 font-weight: lighter;
+                align-items: center;
             }
 
             .foroTexto{
@@ -939,10 +965,13 @@ margin-top: 3%;
 
             .foroRedaccion{
                 display: flex;
-                align-items: flex-end;
-                justify-content: space-around;
+                align-items: center;
+                justify-content: center;
             }
 
+            .imgForo{
+                margin: 10px;
+            }
             .imputForo{
                 height: 20px;
                 border-radius: 5px;
@@ -958,20 +987,25 @@ margin-top: 3%;
                 display: flex;
                 width: 30px;
                 height: 30px;
+                margin: 5px;
                 border-radius: 50%;
-                background-color: var(--1ro-600);
+                background-color: transparent;
                 align-items: center;
                 justify-content: space-around;
             }
             .imgBtnForoEnviar{
                 width: 75%;
                 height: 75%;
-                transition: all 500ms;
+                border-radius: 50%;
+                transition: all 400ms;
             }
             .foroBtn:hover{
+                
                 .imgBtnForoEnviar{
-                    width: 100%;
-                    height: 100%;
+                    height:80% ;
+                    width:80% ;
+                    box-shadow: 0 5px 20px white;
+                    transform: translateY(5px);
                 }
             }
         /* --------------------------------------------------------------------------------------------- */
