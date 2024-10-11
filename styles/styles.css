@@ -1462,7 +1462,7 @@ footer img{
     .fl.header_betwenn a {
         text-decoration: none;
         /* Elimina el subrayado predeterminado */
-        color: black;
+        color: white;
     }
 
     /* Botón de hamburguesa */
