@@ -10,4 +10,8 @@ let intervalo = setInterval(() => {
     if (i >= valores.length) { 
         clearInterval(intervalo);
     }
+
+    if (i == 12) {
+        window.location.href = "index.html"
+    }
 }, 500); 

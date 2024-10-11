@@ -461,7 +461,7 @@ header {
 .seccion-login-logout p{
     display: none;
 }
-/* fin parte de carga */
+
 
 .input-y-boton input {
     display: none;
@@ -470,16 +470,27 @@ header {
     display: none;
 }
 .input-y-boton img {
-    width: 50px; /* Ajusta el tamaño según lo que necesites */
-    height: auto; /* Mantiene la proporción */
+    width: 50px; 
+    height: auto; 
     position: absolute;
-    top: 3%;
+    top: 2%;
     left: 44%;
 }
-.header_betwenn img{
+.header_betwenn a{
     position: absolute;
-    top: 4%;
-    left: 82%;
+    top: 6%;
+    left: 85%;
+}
+.header_betwenn .carrito{
+    display: none;
+}
+.header_betwenn .foto-usuario{
+    position: absolute;
+    top: 1%;
+    left: 87%;
+}
+.header_betwenn p{
+    display: none;
 }
 .seccion-login-logout a{
     position: absolute;
@@ -606,42 +617,50 @@ form a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40%;
 }
+#carga{
+    margin-bottom: 8%;
 
+}
 .carga {
-    width: 40%;
+    width: 40px;
     height: 40px;
-    border: black solid 3px;
-    border-radius: 10px;
+
+    border-radius: 20%;
     margin-top: 1%;
-    position: relative;
+
     background-color: var(--1ro-600);
-    animation: example 7s ease-in;
-    transform-origin: left;
+    animation:carga 7s linear;
+   
 }
 
-@keyframes example {
+@keyframes carga{
     0% {
         background-color: var(--1ro-300);
-        transform: scaleX(0.25);
+        transform: rotate(0deg);
+        border-radius: 10%;
     }
 
     25% {
         background-color: var(--1ro-400);
-        transform: scaleX(0.5);
+        transform: rotate(90deg);
+        border-radius: 50%;
     }
 
     50% {
         background-color: var(--1ro-500);
-        transform: scaleX(0.75);
+        transform: rotate(180deg);
+        border-radius: 10%;
     }
 
     100% {
         background-color: var(--1ro-600);
-        transform: scaleX(1);
+        transform: rotate(360deg);
+        border-radius: 50%;
     }
 }
-
+/* fin parte de carga */
 .fl.header_betwenn a {
     text-decoration: none;
     /* Elimina el subrayado predeterminado */
@@ -655,8 +674,8 @@ form a {
     height: 40px;
     display: flex;
     position: absolute;
-    left: 11%;
-    top: 6%;
+    left: 9%;
+    top: 3%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -705,7 +724,7 @@ footer img{
 
 .carrucel {
     display: flex;
-    border-radius: 10px 10px 0px 0px;
+
     flex-direction: row;
     background-color: var(--1ro-600);
     /* ------------------------------------------------------------------------------------------- */

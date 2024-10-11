@@ -145,6 +145,10 @@ function escrolDer3(event){ /* crea el scroll para el boron derecho */
 }
 
 
-
+document.querySelector("#jugar").addEventListener("click", ()=>{
+    console.log("llego");
+    
+    window.location.href = "game.html"
+})
 
 
