@@ -1,8 +1,8 @@
-let pos = 0;
-let increment = 0 ;
 
 /* carrucel 1 */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+let pos = 0;
+let increment = 0 ;
 let btn_izq = document.querySelector("#botonCarrouselIzq");
 let btn_der = document.querySelector("#botonCarrouselDer");
 let btn_der_flecha= document.querySelector("#fechaDer");
@@ -11,6 +11,8 @@ let cards = document.querySelectorAll("#card");
 
 /* carrucel 2 */
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+let pos2 = 0;
+let increment2 = 0 ;
 let btn_izq2 = document.querySelector("#botonCarrouselIzq2");
 let btn_der2 = document.querySelector("#botonCarrouselDer2");
 let btn_der_flecha2= document.querySelector("#fechaDer2");
@@ -20,6 +22,8 @@ let cards2 = document.querySelectorAll("#card2");
 
 /* carruel 3 */
 /* """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" */
+let pos3 = 0;
+let increment3 = 0 ;
 let btn_izq3 = document.querySelector("#botonCarrouselIzq3");
 let btn_der3 = document.querySelector("#botonCarrouselDer3");
 let btn_der_flecha3= document.querySelector("#fechaDer3");
@@ -89,25 +93,25 @@ function escrolDer(event){ /* crea el scroll para el boron derecho */
 /* 222222222222222222222222222222222222222222222222222222222222222222 */
 function escrolIzq2(event){/* crea el escrol al boron izquierdo */
     event.preventDefault();
-    if(pos > 0){ 
-        increment+= 150 
-        pos--
+    if(pos2 > 0){ 
+        increment2+= 150 
+        pos2--
     } 
     cards2.forEach((card) => {
         card.style.animationName = "animacionCardIzq"; 
-        card.style.transform = "translate(" + increment +"px)";
+        card.style.transform = "translate(" + increment2 +"px)";
     });   
 }
 
 function escrolDer2(event){ /* crea el scroll para el boron derecho */
     event.preventDefault();
-    if(pos <= cards.length-1){
-        increment -= 150
-        pos ++
+    if(pos2 <= cards2.length-1){
+        increment2 -= 150
+        pos2 ++
     }
     cards2.forEach((card) => {
         card.style.animationName = "animacionCardDer";
-        card.style.transform = "translate("+ increment +"px)";
+        card.style.transform = "translate("+ increment2 +"px)";
     });
 }
 
@@ -118,35 +122,29 @@ function escrolDer2(event){ /* crea el scroll para el boron derecho */
 /* 333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 */
 function escrolIzq3(event){/* crea el escrol al boron izquierdo */
     event.preventDefault();
-    if(pos > 0){ 
-        increment+= 150 
-        pos--
+    if(pos3 > 0){ 
+        increment3+= 150 
+        pos3--
     } 
     cards3.forEach((card) => {
         card.style.animationName = "animacionCardIzq"; 
-        card.style.transform = "translate(" + increment +"px)";
+        card.style.transform = "translate(" + increment3 +"px)";
     });   
 }
 
 function escrolDer3(event){ /* crea el scroll para el boron derecho */
     event.preventDefault();
-    if(pos <= cards.length-1){
-        increment -= 150
-        pos ++
+    if(pos3 <= cards3.length-1){
+        increment3 -= 150
+        pos3 ++
     }
     cards3.forEach((card) => {
         card.style.animationName = "animacionCardDer";
-        card.style.transform = "translate("+ increment +"px)";
+        card.style.transform = "translate("+ increment3 +"px)";
     });
 }
 
 
-let maxCharacters = 5;  // Número máximo de caracteres que quieres mostrar
-let paragraph = document.querySelectorAll(".text_card");
-let fullText = paragraph.innerText;
 
-if (fullText.length > maxCharacters) {
-    paragraph.innerText = fullText.substring(0, maxCharacters) + "...";
-}
 
 
