@@ -1255,7 +1255,12 @@ footer img{
     /* .header-formulario .menu{
     border:none
 } */
-
+    /* Seccion para ayudar con carruseles */
+    .contenedor_carrucel_y_botones h2{
+        display: flex;
+        justify-content: center;
+    }
+    /* seccion para ayudar con carruseles terminada */
     header {
         display: flex;
         justify-content: space-between;
