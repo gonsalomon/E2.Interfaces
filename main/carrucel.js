@@ -140,3 +140,13 @@ function escrolDer3(event){ /* crea el scroll para el boron derecho */
     });
 }
 
+
+let maxCharacters = 5;  // Número máximo de caracteres que quieres mostrar
+let paragraph = document.querySelectorAll(".text_card");
+let fullText = paragraph.innerText;
+
+if (fullText.length > maxCharacters) {
+    paragraph.innerText = fullText.substring(0, maxCharacters) + "...";
+}
+
+
