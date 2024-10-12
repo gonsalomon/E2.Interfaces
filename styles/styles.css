@@ -454,7 +454,7 @@ header {
 }
 .header_betwenn {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -1034,7 +1034,7 @@ footer img{
             flex-direction: row;
             justify-content: end;
         }
-
+  
         .juego{
             display: flex;
             align-items: center;
@@ -1060,9 +1060,9 @@ footer img{
         .listaJuego{
             display: flex;
             flex-direction: row;
-            justify-content: flex-end;
+            justify-content:space-around;
         }
-
+     
         .imagenCompartirJuego{
             height: 30px;
             width: 30px;
@@ -1591,6 +1591,7 @@ footer img{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 10%
     }
 
     .carga {
