@@ -11,6 +11,7 @@ function esconderFormulario(e){
    
     espacioDeFormularioEnviado.classList.remove("oculto");
     espacioDeFormularioEnviado.classList.add("contenedor-exitos");
+    
     estadoDeSesion.innerHTML = "Cerrar sesion";
 
 }

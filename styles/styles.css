@@ -440,7 +440,7 @@ header {
     padding: 1%;
 }
 .header-formulario {
-    height: 60px;
+    height: 70px;
     width: 100%;
     background-color: var(--1ro-500);
     color: white;
@@ -460,9 +460,18 @@ header {
 
 .seccion-login-logout p{
     display: none;
+  
 }
 
-
+.contenedor_carrucel_y_botones .titulo-carrusel{
+    display: flex;
+    margin-left: 40%;
+    justify-content: center;
+    background-color: var(--1ro-500);
+    width: 23%;
+    color: white;
+    border-radius: 20px;
+}
 .input-y-boton input {
     display: none;
 }
@@ -659,6 +668,40 @@ form a {
         transform: rotate(360deg);
         border-radius: 50%;
     }
+}
+.contenedor-exitos p {
+    background-color: var(--1ro-400);
+    color: white;
+    margin-bottom: 3%;
+    width: 60%;
+    height: 60px;
+    border-radius: 1px;
+    margin-left: 20%;
+    
+}
+#parte-de-exito{
+    
+    animation: animacionContenedorExito 3s ease-in;
+}
+@keyframes animacionContenedorExito {
+    0%{  
+        box-shadow: 0 0 10px var(--1ro-200), 
+        0 0 20px var(--1ro-300), 
+        0 0 30px var(--1ro-500);
+        margin-left: 15%;
+        background-color: var(--1ro-200);
+        border-radius: 20px;
+       
+    }
+
+    50%{
+          box-shadow: 0 0 10px var(--1ro-200), 
+        0 0 20px var(--1ro-300), 
+        0 0 30px var(--1ro-500);
+        margin-right: 15%;
+        background-color: var(--1ro-300);
+    }
+
 }
 /* fin parte de carga */
 .fl.header_betwenn a {
@@ -1280,6 +1323,21 @@ footer img{
         display: flex;
         justify-content: center;
     }
+    .contenedor_carrucel_y_botones .titulo-carrusel{
+        display: flex;
+        margin-left: 40%;
+        justify-content: center;
+        background-color: var(--1ro-500);
+        width: 20%;
+        color: white;
+        border-radius: 20px;
+    }
+    .titulo-carrusel:hover{
+        box-shadow: 0 0 10px var(--1ro-200), 
+        0 0 20px var(--1ro-300), 
+        0 0 30px var(--1ro-500);
+        transform: skew(5deg, 1deg);
+    }
     /* seccion para ayudar con carruseles terminada */
     header {
         display: flex;
@@ -1383,26 +1441,13 @@ footer img{
         /* Ajuste para evitar el solapamiento */
     }
 
-    div .contenedor-exitos {
-        display: flex;
-
-        align-items: center;
-
-        width: 80%;
-
-    }
-
-    div,
-    .contenedor-exitos p {
-        color: green;
-    }
-
+    
     /* section p{
-    display: flex;
-    align-items: center;
-} */
-    form {
-        color: white;
+        display: flex;
+        align-items: center;
+        } */
+        form {
+            color: white;
         flex-direction: column;
         padding: 6%;
         width: 40%;
@@ -1423,7 +1468,10 @@ footer img{
         color: black;
         font-size: large;
     }
-
+    form #botonFormulario{
+        background-color: var(--1ro-400);
+        color: white;
+    }
     form a {
         display: flex;
         justify-content: center;
@@ -1432,50 +1480,57 @@ footer img{
         font-style: none;
     }
 
-    /* parte de carga */
-    .contenedorCarga {
+ 
+    div .contenedor-exitos {
         display: flex;
-        flex-direction: column;
+        
         align-items: center;
+        
+        width: 80%;
+        
     }
+    
+   
+    .contenedor-exitos p {
+        background-color: var(--1ro-400);
+        color: white;
+        margin-bottom: 2%;
+        width: 50%;
 
-    .carga {
-        width: 40%;
-        height: 40px;
-        border: black solid 3px;
-        border-radius: 10px;
-        margin-top: 1%;
-        position: relative;
-        background-color: var(--1ro-600);
-        animation: example 7s ease-in;
-        transform-origin: left;
+        margin-left: 22%;
+        border-radius: 20px;
     }
+    #parte-de-exito{
+        
+        animation: animacionContenedorExito 5s ease-in;
+    }
+    @keyframes animacionContenedorExito {
+        0%{  
+            box-shadow: 0 0 10px var(--1ro-200), 
+            0 0 20px var(--1ro-300), 
+            0 0 30px var(--1ro-500);
+            margin-left: 15%;
+            background-color: var(--1ro-200);
+            border-radius: 20px;
+           
+        }
 
-    @keyframes example {
-        0% {
+        50%{
+            
+            margin-right: 15%;
             background-color: var(--1ro-300);
-            transform: scaleX(0.25);
         }
-
-        25% {
-            background-color: var(--1ro-400);
-            transform: scaleX(0.5);
+        75%{
+            border-radius: 20px;
+            box-shadow: 0 0 10px var(--1ro-200), 
+            0 0 20px var(--1ro-300), 
+            0 0 30px var(--1ro-500);
+            background-color: var(--1ro-200);
         }
-
-        50% {
-            background-color: var(--1ro-500);
-            transform: scaleX(0.75);
-        }
-
-        100% {
-            background-color: var(--1ro-600);
-            transform: scaleX(1);
+        100%{
+            background-color: var(--1ro-300);
         }
     }
-
-    /* fin parte de carga */
-
-
     .fl.header_betwenn a {
         text-decoration: none;
         /* Elimina el subrayado predeterminado */
@@ -1531,6 +1586,48 @@ footer img{
         justify-content: center;
         padding: 1%;
     }
+    /* parte de carga */
+    .contenedorCarga {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .carga {
+        width: 40%;
+        height: 40px;
+        border: black solid 3px;
+        border-radius: 10px;
+        margin-top: 1%;
+        position: relative;
+        background-color: var(--1ro-600);
+        animation: example 7s ease-in;
+        transform-origin: left;
+    }
+
+    @keyframes example {
+        0% {
+            background-color: var(--1ro-300);
+            transform: scaleX(0.25);
+        }
+
+        25% {
+            background-color: var(--1ro-400);
+            transform: scaleX(0.5);
+        }
+
+        50% {
+            background-color: var(--1ro-500);
+            transform: scaleX(0.75);
+        }
+
+        100% {
+            background-color: var(--1ro-600);
+            transform: scaleX(1);
+        }
+    }
+
+    /* fin parte de carga */
 
     /* ----------------------------------------------------- */
     /* ----------------------------------------------------- */
